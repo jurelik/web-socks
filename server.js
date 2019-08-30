@@ -16,10 +16,10 @@ function webSock(port) {
   
   wss.on('connection', ws => {
     ws.id = uuidv4();
-    this.id = ws.id;
+    const socket = new Socket(ws)
 
     if (events['connection']) {
-      events['connection'].callback(ws);
+      events['connection'].callback(socket);
     }
 
     ws.on('message', json => {
@@ -48,57 +48,66 @@ function webSock(port) {
     });
   });
 
-  wss.on('error', err => {
-    console.log('Server shut down.');
-  });
-
   //Create an event handler
   this.on = function on(event, callback) {
     events[event] = {callback, once: false};
     return this;
   }
 
-  //Create an event handler for one time use
-  this.once = function once(event, callback) {
-    events[event] = {callback, once: true};
-    return this;
-  }
+  wss.on('error', err => {
+    console.log('Server shut down.');
+  });
 
-  //Emit message to socket
-  this.emit = function emit(event, data) {
-    //Check type
-    if (typeof event != 'string' || typeof data != 'object') {
-      throw new TypeError('event must be a string, data must be an object');
+  function Socket(ws) {
+    //Create an event handler
+    this.on = function on(event, callback) {
+      events[event] = {callback, once: false};
+      return this;
     }
 
-    const payload = JSON.stringify({event, data});
-    ws.send(payload);
-    return this;
-  }
-
-  //Emit message to specific socket
-  this.emitTo = function emitTo(id, event, data) {
-    let destination;
-
-    //Find socket
-    for (let socket of wss.clients) {
-      if (socket.id === id) {
-        destination = socket;
-      }
+    //Create an event handler for one time use
+    this.once = function once(event, callback) {
+      events[event] = {callback, once: true};
+      return this;
     }
 
-    //Send message to socket
-    if (destination) {
+    //Emit message to socket
+    this.emit = function emit(event, data) {
       //Check type
       if (typeof event != 'string' || typeof data != 'object') {
         throw new TypeError('event must be a string, data must be an object');
       }
 
       const payload = JSON.stringify({event, data});
-      destination.send(payload);
+      ws.send(payload);
       return this;
+    }
+
+    //Emit message to specific socket
+    this.emitTo = function emitTo(id, event, data) {
+      let destination;
+
+      //Find socket
+      for (let socket of wss.clients) {
+        if (socket.id === id) {
+          destination = socket;
+          break;
+        }
+      }
+
+      //Send message to socket
+      if (destination) {
+        //Check type
+        if (typeof event != 'string' || typeof data != 'object') {
+          throw new TypeError('event must be a string, data must be an object');
+        }
+
+        const payload = JSON.stringify({event, data});
+        destination.send(payload);
+        return this;
+      }
     }
   }
 }
 
-module.exports = webSock;
+module.exports = webSock
