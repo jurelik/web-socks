@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jurelik/web-socks#readme",
   "dependencies": {
+    "staylow": "^1.1.15",
     "uuid": "^3.3.3",
     "ws": "^7.1.2"
   }
