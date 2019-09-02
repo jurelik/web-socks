@@ -6,16 +6,30 @@ function WebSockServer(port) {
   const wss = new WebSocket.Server({
     port,
     clientTracking: true
-  })
-
-  wss.on('connection', ws => {
-    console.log('connection made!');
-
-    ws.on('message', msg => {
-      console.log(msg);
-      ws.send('pong');
-    });
   });
+
+  this.on = function(event, callback) {
+    wss.on('connection', ws => {
+      if (event === 'connection') {
+        callback(ws);
+      }
+    });
+  }
+
+  
+
+  function WebSock() {
+
+  }
+
+  // wss.on('connection', ws => {
+  //   console.log('connection made!');
+
+  //   ws.on('message', msg => {
+  //     console.log(msg);
+  //     ws.send('pong');
+  //   });
+  // });
 }
 
 // function WebSockServer(port) {
