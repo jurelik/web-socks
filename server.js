@@ -8,18 +8,44 @@ function WebSockServer(port) {
     clientTracking: true
   });
 
-  this.on = function(event, callback) {
+  this.on = function on(event, callback) {
     wss.on('connection', ws => {
       if (event === 'connection') {
-        callback(ws);
+        let sock = new WebSock(ws);
+        callback(sock);
       }
     });
   }
 
-  
+  function WebSock(ws) {
+    let events = {};
 
-  function WebSock() {
+    this.emit = function on(event, data) {
+      const payload = JSON.stringify({event, data});
+      ws.send(payload);
+      return this;
+    }
 
+    this.on = function on(event, callback) {
+      events[event] = {callback, once: false};
+      return this;
+    }
+
+    ws.on('message', json => {
+      const message = JSON.parse(json);
+
+      //Check if event handler exists & check if event is only to be triggered once
+      if (events[message.event] && !events[message.event].once) {
+        events[message.event].callback(message.data);
+      }
+      else if (events[message.event] && events[message.event].once) {
+        events[message.event].callback(message.data);
+        delete events[message.event];
+      }
+      else {
+        return;
+      }
+    })
   }
 
   // wss.on('connection', ws => {
