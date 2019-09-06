@@ -19,228 +19,131 @@ function WebSockServer(port) {
 
   function WebSock(ws) {
     let events = {};
+    this.id = uuidv4();
+    ws.id = this.id;
 
-    this.emit = function on(event, data) {
-      const payload = JSON.stringify({event, data});
+    //Create an event handler
+    this.on = function on(event, callback) {
+        events[event] = {callback, once: false};
+        return this;
+    }
+
+    //Create an event handler for one time use
+    this.once = function once(event, callback) {
+      events[event] = {callback, once: true};
+      return this;
+    }
+
+    //Emit message to this socket
+    this.emit = function emit(event, data) {
+      let flags = {
+        binary: []
+      }
+
+      //Check types
+      if (typeof event != 'string') {
+        throw new TypeError('Event must be of type string');
+      }
+      if (data && typeof data != 'object') {
+        throw new TypeError('Data must be of type object');
+      }
+
+      //Check for flags
+      for (let key in data) {
+        if (Buffer.isBuffer(data[key])) {
+          const stringified = data[key].toJSON();
+          data[key] = stringified;
+          flags.binary.push(key);
+        }
+      }
+
+      const payload = JSON.stringify({event, data, flags});
       ws.send(payload);
       return this;
     }
 
-    this.on = function on(event, callback) {
-      events[event] = {callback, once: false};
-      return this;
+    //Emit message to specific socket
+    this.emitTo = function emitTo(id, event, data) {
+      let flags = {
+        binary: []
+      }
+      let destination;
+
+      //Check types
+      if (typeof id != 'string') {
+        throw new TypeError('Id must be of type string');
+      }
+      if (typeof event != 'string') {
+        throw new TypeError('Event must be of type string');
+      }
+      if (data && typeof data != 'object') {
+        throw new TypeError('Data must be of type object');
+      }
+
+      //Find socket
+      for (let socket of wss.clients) {
+        if (socket.id === id) {
+          destination = socket;
+          break;
+        }
+      }
+
+      if (destination && destination.id != this.id) {
+        //Check for flags
+        for (let key in data) {
+          if (Buffer.isBuffer(data[key])) {
+            const stringified = data[key].toJSON();
+            data[key] = stringified;
+            flags.binary.push(key);
+          }
+        }
+
+        const payload = JSON.stringify({event, data, flags});
+        destination.send(payload);
+        return this;
+      }
+      else if (destination && destination.id === this.id) {
+        //Do nothing
+      }
+      else {
+        throw new Error('Socket not found');
+      }
     }
 
     ws.on('message', json => {
-      const message = JSON.parse(json);
+      const payload = JSON.parse(json);
 
-      //Check if event handler exists & check if event is only to be triggered once
-      if (events[message.event] && !events[message.event].once) {
-        events[message.event].callback(message.data);
+      // Check flags
+      for (let key in payload.flags) {
+        if (key === 'binary' && payload.flags[key].length > 0) {
+          payload.flags[key].forEach(binary => {
+            const parsed = Buffer.from(payload.data[binary], 'utf-16');
+            payload.data[binary] = parsed;
+          });
+        }
       }
-      else if (events[message.event] && events[message.event].once) {
-        events[message.event].callback(message.data);
-        delete events[message.event];
+  
+      //Check if event handler exists & check if event is only to be triggered once
+      if (events[payload.event] && !events[payload.event].once) {
+        events[payload.event].callback(payload.data);
+      }
+      else if (events[payload.event] && events[payload.event].once) {
+        events[payload.event].callback(payload.data);
+        delete events[payload.event];
       }
       else {
         return;
       }
-    })
+    });
+
+    ws.on('close', () => {
+      if (events['close']) {
+        console.log('client disconnected');
+        events['close'].callback(ws.id);
+      }
+      wss.clients.delete(ws);
+    });
   }
-
-  // wss.on('connection', ws => {
-  //   console.log('connection made!');
-
-  //   ws.on('message', msg => {
-  //     console.log(msg);
-  //     ws.send('pong');
-  //   });
-  // });
 }
-
-// function WebSockServer(port) {
-
-//   let events = {};
-//   //Init server
-//   const wss = new WebSocket.Server({
-//     port,
-//     clientTracking: true
-//   }, () => {
-//     if (events['open']) {
-//       events['open'].callback();
-//     }
-//   });
-
-//   wss.on('connection', ws => {
-//     ws.id = uuidv4();
-//     let sock = new WebSock(ws, wss, events);
-
-//     if (events['connection']) {
-//       events['connection'].callback(sock);
-//     }
-
-//     ws.on('message', json => {
-//       console.log('received message from ' + ws.id);
-//       const message = JSON.parse(json);
-      
-//       //Check flags
-//       for (let key in message.flags) {
-//         if (key === 'binary' && message.flags[key].length > 0) {
-//           message.flags[key].forEach(binary => {
-//             const parsed = Buffer.from(message.data[binary], 'utf-16');
-//             message.data[binary] = parsed;
-//           });
-//         }
-//       }
-  
-//       //Check if event handler exists & check if event is only to be triggered once
-//       if (events[message.event] && !events[message.event].once) {
-//         events[message.event].callback(message.data);
-//       }
-//       else if (events[message.event] && events[message.event].once) {
-//         events[message.event].callback(message.data);
-//         delete events[message.event];
-//       }
-//       else {
-//         return;
-//       }
-//     });
-
-//     ws.on('close', () => {
-//       if (events['close']) {
-//         console.log('client disconnected');
-//         events['close'].callback(ws.id);
-//       }
-
-//       wss.clients.delete(ws);
-//     });
-
-//     //Create an event handler
-//     ws.on = function on(event, callback) {
-//       events[event] = {callback, once: false};
-//       return this;
-//     }
-
-//     //Create an event handler for one time use
-//     this.once = function once(event, callback) {
-//       events[event] = {callback, once: true};
-//       return this;
-//     }
-
-//     //Emit message to socket
-//     this.emit = function emit(event, data) {
-//       let flags = {
-//         binary: []
-//       };
-
-//       //Check type
-//       // if (typeof event != 'string' || typeof data != 'object') {
-//       //   throw new TypeError('event must be a string, data must be an object');
-//       // }
-
-//       //Check for binary data
-//       for (let key in data) {
-//         if (Buffer.isBuffer(data[key])) {
-//           const stringified = data[key].toJSON();
-//           data[key] = stringified;
-//           flags.binary.push(key);
-//         }
-//       }
-
-//       const payload = JSON.stringify({event, data, flags});
-//       this.ws.send(payload);
-//       return this;
-//     }
-//   });
-
-//   //Create an event handler
-//   this.on = function on(event, callback) {
-//     events[event] = {callback, once: false};
-//     return this;
-//   }
-
-//   wss.on('error', err => {
-//     console.log('Server shut down.');
-//   });
-// }
-
-// function WebSock(ws, wss, events) {
-//   this.ws = ws;
-//   this.id = ws.id;
-
-//   //Create an event handler
-//   this.on = function on(event, callback) {
-//     events[event] = {callback, once: false};
-//     return this;
-//   }
-
-//   //Create an event handler for one time use
-//   this.once = function once(event, callback) {
-//     events[event] = {callback, once: true};
-//     return this;
-//   }
-
-//   //Emit message to socket
-//   this.emit = function emit(event, data) {
-//     let flags = {
-//       binary: []
-//     };
-
-//     //Check type
-//     // if (typeof event != 'string' || typeof data != 'object') {
-//     //   throw new TypeError('event must be a string, data must be an object');
-//     // }
-
-//     //Check for binary data
-//     for (let key in data) {
-//       if (Buffer.isBuffer(data[key])) {
-//         const stringified = data[key].toJSON();
-//         data[key] = stringified;
-//         flags.binary.push(key);
-//       }
-//     }
-
-//     const payload = JSON.stringify({event, data, flags});
-//     this.ws.send(payload);
-//     return this;
-//   }
-
-//   //Emit message to specific socket
-//   this.emitTo = function emitTo(id, event, data) {
-//     let destination;
-//     let flags = {
-//       binary: []
-//     };
-
-//     //Find socket
-//     for (let socket of wss.clients) {
-//       if (socket.id === id) {
-//         destination = socket;
-//         break;
-//       }
-//     }
-
-//     //Check for binary data
-//     for (let key in data) {
-//       if (Buffer.isBuffer(data[key])) {
-//         const stringified = data[key].toJSON();
-//         data[key] = stringified;
-//         flags.binary.push(key);
-//       }
-//     }
-
-//     //Send message to socket
-//     if (destination) {
-//       //Check type
-//       if (typeof event != 'string' || typeof data != 'object') {
-//         throw new TypeError('event must be a string, data must be an object');
-//       }
-
-//       const payload = JSON.stringify({event, data, flags});
-//       destination.send(payload);
-//       return this;
-//     }
-//   }
-// }
 
 module.exports = WebSockServer;

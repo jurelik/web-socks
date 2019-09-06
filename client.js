@@ -1,18 +1,5 @@
 let WebSocket = require('ws');
 
-
-// function WebSock(url) {
-//   const ws = new WebSocket(url);
-
-//   ws.on('message', msg => {
-//     console.log(msg);
-//   });
-
-//   this.ping = function ping() {
-//     ws.send('ping');
-//   }
-// }
-
 function WebSock(url) {
   const ws = new WebSocket(url);
 
@@ -36,6 +23,14 @@ function WebSock(url) {
       binary: []
     };
 
+    //Check types
+    if (typeof event != 'string') {
+      throw new TypeError('Event must be of type string');
+    }
+    if (data && typeof data != 'object') {
+      throw new TypeError('Data must be of type object');
+    }
+
     //Check for binary data
     for (let key in data) {
       if (Buffer.isBuffer(data[key])) {
@@ -48,6 +43,13 @@ function WebSock(url) {
     const payload = JSON.stringify({event, data, flags});
     ws.send(payload);
     return this;
+  }
+
+  //Remove listener manually
+  this.removeListener = function removeListener(event) {
+    if (events[event]) {
+      delete events[event];
+    }
   }
 
   ws.on('open', () => {
