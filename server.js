@@ -9,12 +9,12 @@ function WebSockServer(port) {
   });
 
   this.on = function on(event, callback) {
-    wss.on('connection', ws => {
-      if (event === 'connection') {
+    if (event === 'connection') {
+      wss.on('connection', ws => {
         let sock = new WebSock(ws);
         callback(sock);
-      }
-    });
+      });
+    }
   }
 
   function WebSock(ws) {
