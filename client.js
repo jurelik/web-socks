@@ -53,16 +53,21 @@ function WebSock(url) {
   }
 
   ws.on('open', () => {
+    console.log('ayy');
+    reconnectAttempts = 0;
     if (events['open']) {
       events['open'].callback(ws);
     }
   });
 
   ws.on('close', () => {
-    if (events['close']) {
-      events['close'].callback();
-    }
-  })
+    console.log('Connection to server lost, terminating process.');
+    process.exit();
+  });
+
+  ws.on('error', err => {
+    console.log(err);
+  });
 
   ws.on('message', json => {
     const message = JSON.parse(json);

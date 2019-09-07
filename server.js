@@ -138,7 +138,6 @@ function WebSockServer(port) {
 
     ws.on('close', () => {
       if (events['close']) {
-        console.log('client disconnected');
         events['close'].callback(ws.id);
       }
       wss.clients.delete(ws);
