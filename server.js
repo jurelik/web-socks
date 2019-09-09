@@ -22,19 +22,31 @@ function WebSockServer(port) {
     this.id = uuidv4();
     ws.id = this.id;
 
-    //Create an event handler
+    /**
+     * Create an event handler
+     * @param {string} event
+     * @param {function} callback
+     */
     this.on = function on(event, callback) {
         events[event] = {callback, once: false};
         return this;
     }
 
-    //Create an event handler for one time use
+    /**
+     * Create an event handler for one time use
+     * @param {string} event
+     * @param {function} callback
+     */
     this.once = function once(event, callback) {
       events[event] = {callback, once: true};
       return this;
     }
 
-    //Emit message to this socket
+    /**
+     * Emit message to this socket
+     * @param {string} event
+     * @param {object} data
+     */
     this.emit = function emit(event, data) {
       let flags = {
         binary: []
@@ -62,7 +74,11 @@ function WebSockServer(port) {
       return this;
     }
 
-    //Emit message to specific socket
+    /**
+     * Emit message to specific socket
+     * @param {string} event
+     * @param {object} data
+     */
     this.emitTo = function emitTo(id, event, data) {
       let flags = {
         binary: []

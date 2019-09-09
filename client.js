@@ -5,19 +5,31 @@ function WebSock(url) {
 
   let events = {};
 
-  //Create an event handler
+  /**
+   * Create an event handler
+   * @param {string} event
+   * @param {function} callback
+   */
   this.on = function on(event, callback) {
     events[event] = {callback, once: false};
     return this;
   }
 
-  //Create an event handler for one time use
+  /**
+   * Create an event handler for one time use
+   * @param {string} event
+   * @param {function} callback
+   */
   this.once = function once(event, callback) {
     events[event] = {callback, once: true};
     return this;
   }
 
-  //Emit message to server
+  /**
+   * Emit message to server
+   * @param {string} event
+   * @param {object} data
+   */
   this.emit = function emit(event, data) {
     let flags = {
       binary: []
@@ -45,7 +57,10 @@ function WebSock(url) {
     return this;
   }
 
-  //Remove listener manually
+  /**
+   * Remove listener manually
+   * @param {string} event
+   */
   this.removeListener = function removeListener(event) {
     if (events[event]) {
       delete events[event];
