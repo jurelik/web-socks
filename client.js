@@ -43,14 +43,7 @@ function WebSock(url) {
       throw new TypeError('Data must be of type object');
     }
 
-    //Check for binary data
-    for (let key in data) {
-      if (Buffer.isBuffer(data[key])) {
-        const stringified = data[key].toJSON();
-        data[key] = stringified;
-        flags.binary.push(key);
-      }
-    }
+    checkForBinary(data, flags);
 
     const payload = JSON.stringify({event, data, flags});
     ws.send(payload);
@@ -85,30 +78,57 @@ function WebSock(url) {
   });
 
   ws.on('message', json => {
-    const message = JSON.parse(json);
+    const payload = JSON.parse(json);
 
     //Check flags
-    for (let key in message.flags) {
-      if (key === 'binary' && message.flags[key].length > 0) {
-        message.flags[key].forEach(buffer => {
-          const parsed = Buffer.from(message.data[buffer]);
-          message.data[buffer] = parsed;
-        });
+    for (let key in payload.flags) {
+      if (key === 'binary' && payload.flags[key].length > 0) {
+        convertToBuffer(payload.data, payload.flags, key);
       }
     }
 
     //Check if event handler exists & check if event is only to be triggered once
-    if (events[message.event] && !events[message.event].once) {
-      events[message.event].callback(message.data);
+    if (events[payload.event] && !events[payload.event].once) {
+      events[payload.event].callback(payload.data);
     }
-    else if (events[message.event] && events[message.event].once) {
-      events[message.event].callback(message.data);
-      delete events[message.event];
+    else if (events[payload.event] && events[payload.event].once) {
+      events[payload.event].callback(payload.data);
+      delete events[payload.event];
     }
     else {
       return;
     }
   });
+}
+
+function convertToBuffer(data, flags, key) {
+  flags[key].forEach(binary => {
+    if (data[binary]) {
+      const parsed = Buffer.from(data[binary], 'utf-16');
+      data[binary] = parsed;
+    }
+    else {
+      //Find binary data
+      for (let _key in data) {
+        if (typeof data[_key] === 'object') {
+          convertToBuffer(data[_key], flags, key);
+        }
+      }
+    }
+  });
+}
+
+function checkForBinary(data, flags) {
+  for (let key in data) {
+    if (Buffer.isBuffer(data[key])) {
+      const stringified = data[key].toJSON();
+      data[key] = stringified;
+      flags.binary.push(key);
+    }
+    else if (typeof data[key] === 'object') {
+      checkForBinary(data[key], flags);
+    }
+  }
 }
 
 module.exports = WebSock;

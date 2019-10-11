@@ -60,14 +60,7 @@ function WebSockServer(port) {
         throw new TypeError('Data must be of type object');
       }
 
-      //Check for flags
-      for (let key in data) {
-        if (Buffer.isBuffer(data[key])) {
-          const stringified = data[key].toJSON();
-          data[key] = stringified;
-          flags.binary.push(key);
-        }
-      }
+      checkForBinary(data, flags);
 
       const payload = JSON.stringify({event, data, flags});
       ws.send(payload);
@@ -105,14 +98,7 @@ function WebSockServer(port) {
       }
 
       if (destination && destination.id != this.id) {
-        //Check for flags
-        for (let key in data) {
-          if (Buffer.isBuffer(data[key])) {
-            const stringified = data[key].toJSON();
-            data[key] = stringified;
-            flags.binary.push(key);
-          }
-        }
+        checkForBinary(data, flags);
 
         const payload = JSON.stringify({event, data, flags});
         destination.send(payload);
@@ -132,10 +118,7 @@ function WebSockServer(port) {
       // Check flags
       for (let key in payload.flags) {
         if (key === 'binary' && payload.flags[key].length > 0) {
-          payload.flags[key].forEach(binary => {
-            const parsed = Buffer.from(payload.data[binary], 'utf-16');
-            payload.data[binary] = parsed;
-          });
+          convertToBuffer(payload.data, payload.flags, key);
         }
       }
   
@@ -158,6 +141,36 @@ function WebSockServer(port) {
       }
       wss.clients.delete(ws);
     });
+  }
+}
+
+function convertToBuffer(data, flags, key) {
+  flags[key].forEach(binary => {
+    if (data[binary]) {
+      const parsed = Buffer.from(data[binary], 'utf-16');
+      data[binary] = parsed;
+    }
+    else {
+      //Find binary data
+      for (let _key in data) {
+        if (typeof data[_key] === 'object') {
+          convertToBuffer(data[_key], flags, key);
+        }
+      }
+    }
+  });
+}
+
+function checkForBinary(data, flags) {
+  for (let key in data) {
+    if (Buffer.isBuffer(data[key])) {
+      const stringified = data[key].toJSON();
+      data[key] = stringified;
+      flags.binary.push(key);
+    }
+    else if (typeof data[key] === 'object') {
+      checkForBinary(data[key], flags);
+    }
   }
 }
 
