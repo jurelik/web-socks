@@ -112,6 +112,11 @@ function WebSockServer(port) {
       }
     }
 
+    //Wrapper for the close() function
+    this.close = function close() {
+      ws.close();
+    }
+
     ws.on('message', json => {
       const payload = JSON.parse(json);
 
