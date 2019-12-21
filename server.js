@@ -17,6 +17,33 @@ function WebSockServer(port) {
     }
   }
 
+  /**
+   * Broadcast to all sockets
+   * @param {string} event
+   * @param {object} data
+   */
+  this.broadcast = function broadcast(event, data) {
+    let flags = {
+      binary: []
+    }
+
+    //Check types
+    if (typeof event != 'string') {
+      throw new TypeError('Event must be of type string');
+    }
+    if (data && typeof data != 'object') {
+      throw new TypeError('Data must be of type object');
+    }
+
+    checkForBinary(data, flags);
+
+    const payload = JSON.stringify({event, data, flags});
+
+    wss.clients.forEach(client => {
+      client.send(payload);
+    });
+  }
+
   function WebSock(ws) {
     let events = {};
     this.id = uuidv4();
@@ -126,7 +153,7 @@ function WebSockServer(port) {
           convertToBuffer(payload.data, payload.flags, key);
         }
       }
-  
+
       //Check if event handler exists & check if event is only to be triggered once
       if (events[payload.event] && !events[payload.event].once) {
         events[payload.event].callback(payload.data);

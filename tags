@@ -1,0 +1,748 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/9f494f0/
+./lib/md5.js	node_modules/uuid/package.json	/^    ".\/lib\/md5.js": ".\/lib\/md5-browser.js"$/;"	s	object:browser
+./lib/rng.js	node_modules/uuid/package.json	/^    ".\/lib\/rng.js": ".\/lib\/rng-browser.js",$/;"	s	object:browser
+./lib/sha1.js	node_modules/uuid/package.json	/^    ".\/lib\/sha1.js": ".\/lib\/sha1-browser.js",$/;"	s	object:browser
+0	node_modules/async-limiter/package.json	/^    "\/ws"$/;"	s	array:_requiredBy
+0	node_modules/async-limiter/package.json	/^    "throttle",$/;"	s	array:keywords
+0	node_modules/staylow/package.json	/^    "#USER",$/;"	s	array:_requiredBy
+0	node_modules/staylow/package.json	/^    "command",$/;"	s	array:keywords
+0	node_modules/uuid/package.json	/^      "@commitlint\/config-conventional"$/;"	s	array:commitlint.extends
+0	node_modules/uuid/package.json	/^    "#USER",$/;"	s	array:_requiredBy
+0	node_modules/uuid/package.json	/^    "uuid",$/;"	s	array:keywords
+0	node_modules/uuid/package.json	/^    {$/;"	o	array:contributors
+0	node_modules/ws/package.json	/^    "#USER",$/;"	s	array:_requiredBy
+0	node_modules/ws/package.json	/^    "HyBi",$/;"	s	array:keywords
+0	node_modules/ws/package.json	/^    "browser.js",$/;"	s	array:files
+1	node_modules/async-limiter/package.json	/^    "async",$/;"	s	array:keywords
+1	node_modules/staylow/package.json	/^    "\/"$/;"	s	array:_requiredBy
+1	node_modules/staylow/package.json	/^    "prompt",$/;"	s	array:keywords
+1	node_modules/uuid/package.json	/^    "\/"$/;"	s	array:_requiredBy
+1	node_modules/uuid/package.json	/^    "guid",$/;"	s	array:keywords
+1	node_modules/uuid/package.json	/^    {$/;"	o	array:contributors
+1	node_modules/ws/package.json	/^    "Push",$/;"	s	array:keywords
+1	node_modules/ws/package.json	/^    "\/"$/;"	s	array:_requiredBy
+1	node_modules/ws/package.json	/^    "index.js",$/;"	s	array:files
+1.3.0	node_modules/uuid/CHANGELOG.md	/^# 1.3.0$/;"	c
+1.3.2	node_modules/uuid/CHANGELOG.md	/^# 1.3.2$/;"	c
+1.4.0	node_modules/uuid/CHANGELOG.md	/^# 1.4.0$/;"	c
+2	node_modules/async-limiter/package.json	/^    "limiter",$/;"	s	array:keywords
+2	node_modules/staylow/package.json	/^    "cli",$/;"	s	array:keywords
+2	node_modules/uuid/package.json	/^    "rfc4122"$/;"	s	array:keywords
+2	node_modules/uuid/package.json	/^    {$/;"	o	array:contributors
+2	node_modules/ws/package.json	/^    "RFC-6455",$/;"	s	array:keywords
+2	node_modules/ws/package.json	/^    "lib\/*.js"$/;"	s	array:files
+2.0.0	node_modules/uuid/CHANGELOG.md	/^# 2.0.0$/;"	c
+3	node_modules/async-limiter/package.json	/^    "asynchronous",$/;"	s	array:keywords
+3	node_modules/staylow/package.json	/^    "stdin",$/;"	s	array:keywords
+3	node_modules/uuid/package.json	/^    {$/;"	o	array:contributors
+3	node_modules/ws/package.json	/^    "WebSocket",$/;"	s	array:keywords
+3.0.0 (2016-11-17)	node_modules/uuid/CHANGELOG.md	/^# 3.0.0 (2016-11-17)$/;"	c
+3.0.1 (2016-11-28)	node_modules/uuid/CHANGELOG.md	/^# 3.0.1 (2016-11-28)$/;"	c
+4	node_modules/async-limiter/package.json	/^    "job",$/;"	s	array:keywords
+4	node_modules/staylow/package.json	/^    "tty"$/;"	s	array:keywords
+4	node_modules/uuid/package.json	/^    {$/;"	o	array:contributors
+4	node_modules/ws/package.json	/^    "WebSockets",$/;"	s	array:keywords
+5	node_modules/async-limiter/package.json	/^    "task",$/;"	s	array:keywords
+5	node_modules/ws/package.json	/^    "real-time"$/;"	s	array:keywords
+6	node_modules/async-limiter/package.json	/^    "concurrency",$/;"	s	array:keywords
+7	node_modules/async-limiter/package.json	/^    "concurrent"$/;"	s	array:keywords
+@commitlint/cli	node_modules/uuid/package.json	/^    "@commitlint\/cli": "8.1.0",$/;"	s	object:devDependencies
+@commitlint/config-conventional	node_modules/uuid/package.json	/^    "@commitlint\/config-conventional": "8.1.0",$/;"	s	object:devDependencies
+API	node_modules/async-limiter/readme.md	/^## API$/;"	s
+API	node_modules/uuid/README.md	/^## API$/;"	s
+API docs	node_modules/ws/README.md	/^## API docs$/;"	s
+AnonymousFunction4cd74fc50100	node_modules/async-limiter/index.js	/^arrayAddMethods.forEach(function(method) {$/;"	f
+AnonymousFunction4cd74fc50200	node_modules/async-limiter/index.js	/^  get: function() {$/;"	f
+AnonymousFunctiond2e1c8470100	node_modules/uuid/lib/v35.js	/^  uuid.replace(\/[a-fA-F0-9]{2}\/g, function(hex) {$/;"	f
+Async-Limiter	node_modules/async-limiter/readme.md	/^# Async-Limiter$/;"	c
+BINARY_TYPES	node_modules/ws/lib/constants.js	/^  BINARY_TYPES: ['nodebuffer', 'arraybuffer', 'fragments'],$/;"	p	class:module.exports
+Bug Fixes	node_modules/uuid/CHANGELOG.md	/^### Bug Fixes$/;"	S
+CLOSED	node_modules/ws/lib/websocket.js	/^  get CLOSED() {$/;"	G	class:WebSocket
+CLOSING	node_modules/ws/lib/websocket.js	/^  get CLOSING() {$/;"	G	class:WebSocket
+CONNECTING	node_modules/ws/lib/websocket.js	/^  get CONNECTING() {$/;"	G	class:WebSocket
+Changelog	node_modules/uuid/CHANGELOG.md	/^# Changelog$/;"	c
+Changelog	node_modules/ws/README.md	/^## Changelog$/;"	s
+Client authentication	node_modules/ws/README.md	/^### Client authentication$/;"	S
+CloseEvent	node_modules/ws/lib/event-target.js	/^class CloseEvent extends Event {$/;"	c
+Command Line	node_modules/uuid/README.md	/^## Command Line$/;"	s
+Connection	node_modules/ws/lib/websocket-server.js	/^      Connection: 'close',$/;"	p	class:abortHandshake.headers
+Connection	node_modules/ws/lib/websocket.js	/^    Connection: 'Upgrade',$/;"	p	class:opts.headers
+Content-Length	node_modules/ws/lib/websocket-server.js	/^      'Content-Length': Buffer.byteLength(message),$/;"	p	class:abortHandshake.headers
+Content-type	node_modules/ws/lib/websocket-server.js	/^      'Content-type': 'text\/html',$/;"	p	class:abortHandshake.headers
+EMPTY_BLOCK	node_modules/ws/lib/permessage-deflate.js	/^const EMPTY_BLOCK = Buffer.from([0x00]);$/;"	C
+EMPTY_BUFFER	node_modules/ws/lib/constants.js	/^  EMPTY_BUFFER: Buffer.alloc(0),$/;"	p	class:module.exports
+ErrorEvent	node_modules/ws/lib/event-target.js	/^class ErrorEvent extends Event {$/;"	c
+Event	node_modules/ws/lib/event-target.js	/^class Event {$/;"	c
+EventEmitter	node_modules/ws/lib/websocket-server.js	/^const EventEmitter = require('events');$/;"	C
+EventEmitter	node_modules/ws/lib/websocket.js	/^const EventEmitter = require('events');$/;"	C
+EventTarget	node_modules/ws/lib/event-target.js	/^const EventTarget = {$/;"	c
+Example	node_modules/async-limiter/readme.md	/^## Example$/;"	s
+External HTTP/S server	node_modules/ws/README.md	/^### External HTTP\/S server$/;"	S
+FAQ	node_modules/ws/README.md	/^## FAQ$/;"	s
+Features	node_modules/uuid/CHANGELOG.md	/^### Features$/;"	S
+GET_DATA	node_modules/ws/lib/receiver.js	/^const GET_DATA = 4;$/;"	C
+GET_INFO	node_modules/ws/lib/receiver.js	/^const GET_INFO = 0;$/;"	C
+GET_MASK	node_modules/ws/lib/receiver.js	/^const GET_MASK = 3;$/;"	C
+GET_PAYLOAD_LENGTH_16	node_modules/ws/lib/receiver.js	/^const GET_PAYLOAD_LENGTH_16 = 1;$/;"	C
+GET_PAYLOAD_LENGTH_64	node_modules/ws/lib/receiver.js	/^const GET_PAYLOAD_LENGTH_64 = 2;$/;"	C
+GUID	node_modules/ws/lib/constants.js	/^  GUID: '258EAFA5-E914-47DA-95CA-C5AB0DC85B11',$/;"	p	class:module.exports
+How to connect via a proxy?	node_modules/ws/README.md	/^### How to connect via a proxy?$/;"	S
+How to detect and close broken connections?	node_modules/ws/README.md	/^### How to detect and close broken connections?$/;"	S
+How to get the IP address of the client?	node_modules/ws/README.md	/^### How to get the IP address of the client?$/;"	S
+INFLATING	node_modules/ws/lib/receiver.js	/^const INFLATING = 5;$/;"	C
+Init	node_modules/staylow/README.md	/^## Init$/;"	s
+Install	node_modules/async-limiter/readme.md	/^## Install$/;"	s
+Installing	node_modules/ws/README.md	/^## Installing$/;"	s
+Instance methods	node_modules/async-limiter/readme.md	/^## Instance methods$/;"	s
+Instance methods mixed in from `Array`	node_modules/async-limiter/readme.md	/^## Instance methods mixed in from `Array`$/;"	s
+License	node_modules/ws/README.md	/^## License$/;"	s
+Limiter	node_modules/ws/lib/permessage-deflate.js	/^const Limiter = require('async-limiter');$/;"	C
+Log	node_modules/staylow/README.md	/^## Log$/;"	s
+MessageEvent	node_modules/ws/lib/event-target.js	/^class MessageEvent extends Event {$/;"	c
+Motivation	node_modules/async-limiter/readme.md	/^## Motivation$/;"	s
+Multiple servers sharing a single HTTP/S server	node_modules/ws/README.md	/^### Multiple servers sharing a single HTTP\/S server$/;"	S
+NOOP	node_modules/ws/lib/constants.js	/^  NOOP: () => {}$/;"	p	class:module.exports
+OPEN	node_modules/ws/lib/websocket.js	/^  get OPEN() {$/;"	G	class:WebSocket
+OpenEvent	node_modules/ws/lib/event-target.js	/^class OpenEvent extends Event {$/;"	c
+Opt-in for performance and spec compliance	node_modules/ws/README.md	/^### Opt-in for performance and spec compliance$/;"	S
+Other examples	node_modules/ws/README.md	/^### Other examples$/;"	S
+Pause / Resume	node_modules/staylow/README.md	/^## Pause \/ Resume$/;"	s
+PerMessageDeflate	node_modules/ws/lib/permessage-deflate.js	/^class PerMessageDeflate {$/;"	c
+PerMessageDeflate	node_modules/ws/lib/receiver.js	/^const PerMessageDeflate = require('.\/permessage-deflate');$/;"	C
+PerMessageDeflate	node_modules/ws/lib/sender.js	/^const PerMessageDeflate = require('.\/permessage-deflate');$/;"	C
+PerMessageDeflate	node_modules/ws/lib/websocket-server.js	/^const PerMessageDeflate = require('.\/permessage-deflate');$/;"	C
+PerMessageDeflate	node_modules/ws/lib/websocket.js	/^const PerMessageDeflate = require('.\/permessage-deflate');$/;"	C
+Prompt	node_modules/staylow/README.md	/^## Prompt$/;"	s
+Properties	node_modules/async-limiter/readme.md	/^## Properties$/;"	s
+Protocol support	node_modules/ws/README.md	/^## Protocol support$/;"	s
+Queue	node_modules/async-limiter/index.js	/^function Queue(options) {$/;"	c
+Quickstart - Browser-ready Versions	node_modules/uuid/README.md	/^## Quickstart - Browser-ready Versions$/;"	s
+Quickstart - CommonJS (Recommended)	node_modules/uuid/README.md	/^## Quickstart - CommonJS (Recommended)$/;"	s
+ROTL	node_modules/uuid/lib/sha1-browser.js	/^function ROTL(x, n) {$/;"	f
+Receiver	node_modules/ws/lib/receiver.js	/^class Receiver extends Writable {$/;"	c
+Receiver	node_modules/ws/lib/websocket.js	/^const Receiver = require('.\/receiver');$/;"	C
+Sec-WebSocket-Key	node_modules/ws/lib/websocket.js	/^    'Sec-WebSocket-Key': key,$/;"	p	class:opts.headers
+Sec-WebSocket-Version	node_modules/ws/lib/websocket.js	/^    'Sec-WebSocket-Version': opts.protocolVersion,$/;"	p	class:opts.headers
+Sender	node_modules/ws/lib/sender.js	/^class Sender {$/;"	c
+Sender	node_modules/ws/lib/websocket.js	/^const Sender = require('.\/sender');$/;"	C
+Sending and receiving text data	node_modules/ws/README.md	/^### Sending and receiving text data$/;"	S
+Sending binary data	node_modules/ws/README.md	/^### Sending binary data$/;"	S
+Server broadcast	node_modules/ws/README.md	/^### Server broadcast$/;"	S
+Simple server	node_modules/ws/README.md	/^### Simple server$/;"	S
+TRAILER	node_modules/ws/lib/permessage-deflate.js	/^const TRAILER = Buffer.from([0x00, 0x00, 0xff, 0xff]);$/;"	C
+Table of Contents	node_modules/ws/README.md	/^## Table of Contents$/;"	s
+Test	node_modules/async-limiter/readme.md	/^## Test$/;"	s
+Testing	node_modules/uuid/README.md	/^## Testing$/;"	s
+Upgrade	node_modules/ws/lib/websocket.js	/^    Upgrade: 'websocket',$/;"	p	class:opts.headers
+Usage examples	node_modules/ws/README.md	/^## Usage examples$/;"	s
+Use the Node.js streams API	node_modules/ws/README.md	/^### Use the Node.js streams API$/;"	S
+Version 1	node_modules/uuid/README.md	/^### Version 1$/;"	S
+Version 3	node_modules/uuid/README.md	/^### Version 3$/;"	S
+Version 4	node_modules/uuid/README.md	/^### Version 4$/;"	S
+Version 5	node_modules/uuid/README.md	/^### Version 5$/;"	S
+WebSock	client.js	/^function WebSock(url) {$/;"	c
+WebSock	server.js	/^  function WebSock(ws) {$/;"	c	class:WebSockServer
+WebSock	test-client.js	/^const WebSock = require('.\/client');$/;"	C
+WebSockServer	index.js	/^const WebSockServer = require('.\/server');$/;"	C
+WebSockServer	server.js	/^function WebSockServer(port) {$/;"	c
+WebSocket	client.js	/^let WebSocket = require('ws');$/;"	v
+WebSocket	node_modules/ws/index.js	/^const WebSocket = require('.\/lib\/websocket');$/;"	C
+WebSocket	node_modules/ws/lib/websocket-server.js	/^const WebSocket = require('.\/websocket');$/;"	C
+WebSocket	node_modules/ws/lib/websocket.js	/^WebSocket.prototype.addEventListener = addEventListener;$/;"	c
+WebSocket	node_modules/ws/lib/websocket.js	/^class WebSocket extends EventEmitter {$/;"	c
+WebSocket	server.js	/^let WebSocket = require('ws');$/;"	v
+WebSocket compression	node_modules/ws/README.md	/^## WebSocket compression$/;"	s
+WebSocketServer	node_modules/ws/lib/websocket-server.js	/^class WebSocketServer extends EventEmitter {$/;"	c
+Zlib Example	node_modules/async-limiter/readme.md	/^## Zlib Example$/;"	s
+[3.1.0](https://github.com/kelektiv/node-uuid/compare/v3.1.0...v3.0.1) (2017-06-17)	node_modules/uuid/CHANGELOG.md	/^# [3.1.0](https:\/\/github.com\/kelektiv\/node-uuid\/compare\/v3.1.0...v3.0.1) (2017-06-17)$/;"	c
+[3.2.0](https://github.com/kelektiv/node-uuid/compare/v3.1.0...v3.2.0) (2018-01-16)	node_modules/uuid/CHANGELOG.md	/^# [3.2.0](https:\/\/github.com\/kelektiv\/node-uuid\/compare\/v3.1.0...v3.2.0) (2018-01-16)$/;"	c
+[3.2.1](https://github.com/kelektiv/node-uuid/compare/v3.2.0...v3.2.1) (2018-01-16)	node_modules/uuid/CHANGELOG.md	/^## [3.2.1](https:\/\/github.com\/kelektiv\/node-uuid\/compare\/v3.2.0...v3.2.1) (2018-01-16)$/;"	s
+[3.3.0](https://github.com/kelektiv/node-uuid/compare/v3.2.1...v3.3.0) (2018-06-22)	node_modules/uuid/CHANGELOG.md	/^# [3.3.0](https:\/\/github.com\/kelektiv\/node-uuid\/compare\/v3.2.1...v3.3.0) (2018-06-22)$/;"	c
+[3.3.1](https://github.com/kelektiv/node-uuid/compare/v3.3.0...v3.3.1) (2018-06-28)	node_modules/uuid/CHANGELOG.md	/^## [3.3.1](https:\/\/github.com\/kelektiv\/node-uuid\/compare\/v3.3.0...v3.3.1) (2018-06-28)$/;"	s
+[3.3.2](https://github.com/kelektiv/node-uuid/compare/v3.3.1...v3.3.2) (2018-06-28)	node_modules/uuid/CHANGELOG.md	/^## [3.3.2](https:\/\/github.com\/kelektiv\/node-uuid\/compare\/v3.3.1...v3.3.2) (2018-06-28)$/;"	s
+[3.3.3](https://github.com/kelektiv/node-uuid/compare/v3.3.2...v3.3.3) (2019-08-19)	node_modules/uuid/CHANGELOG.md	/^### [3.3.3](https:\/\/github.com\/kelektiv\/node-uuid\/compare\/v3.3.2...v3.3.3) (2019-08-19)$/;"	S
+_clockseq	node_modules/uuid/v1.js	/^var _clockseq;$/;"	v
+_compress	node_modules/ws/lib/permessage-deflate.js	/^  _compress(data, fin, callback) {$/;"	m	class:PerMessageDeflate
+_decompress	node_modules/ws/lib/permessage-deflate.js	/^  _decompress(data, fin, callback) {$/;"	m	class:PerMessageDeflate
+_destroy	node_modules/ws/lib/stream.js	/^  duplex._destroy = function(err, callback) {$/;"	f	function:duplex
+_final	node_modules/ws/lib/stream.js	/^  duplex._final = function(callback) {$/;"	f	function:duplex
+_from	node_modules/async-limiter/package.json	/^  "_from": "async-limiter@^1.0.0",$/;"	s
+_from	node_modules/staylow/package.json	/^  "_from": "staylow",$/;"	s
+_from	node_modules/uuid/package.json	/^  "_from": "uuid",$/;"	s
+_from	node_modules/ws/package.json	/^  "_from": "ws",$/;"	s
+_id	node_modules/async-limiter/package.json	/^  "_id": "async-limiter@1.0.1",$/;"	s
+_id	node_modules/staylow/package.json	/^  "_id": "staylow@1.1.15",$/;"	s
+_id	node_modules/uuid/package.json	/^  "_id": "uuid@3.3.3",$/;"	s
+_id	node_modules/ws/package.json	/^  "_id": "ws@7.1.2",$/;"	s
+_inBundle	node_modules/async-limiter/package.json	/^  "_inBundle": false,$/;"	b
+_inBundle	node_modules/staylow/package.json	/^  "_inBundle": false,$/;"	b
+_inBundle	node_modules/uuid/package.json	/^  "_inBundle": false,$/;"	b
+_inBundle	node_modules/ws/package.json	/^  "_inBundle": false,$/;"	b
+_integrity	node_modules/async-limiter/package.json	/^  "_integrity": "sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H\/QbJFMCr+uO2kwohwXQPxw\/9OCxp05r5gh/;"	s
+_integrity	node_modules/staylow/package.json	/^  "_integrity": "sha512-zY\/akFy+O3aLK+NBhyyqxfiob8NtoM79B+wswbrAqQSFtKMuOcrlpJf4MPXI1wuFPQXBido/;"	s
+_integrity	node_modules/uuid/package.json	/^  "_integrity": "sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2\/6Mtx+Uys6iaylx/;"	s
+_integrity	node_modules/ws/package.json	/^  "_integrity": "sha512-gftXq3XI81cJCgkUiAVixA0raD9IVmXqsylCrjRygw4+UOOGzPoxnQ6r\/CnVL9i+mDncJo9/;"	s
+_lastMSecs	node_modules/uuid/v1.js	/^var _lastMSecs = 0;$/;"	v
+_lastNSecs	node_modules/uuid/v1.js	/^var _lastNSecs = 0;$/;"	v
+_location	node_modules/async-limiter/package.json	/^  "_location": "\/async-limiter",$/;"	s
+_location	node_modules/staylow/package.json	/^  "_location": "\/staylow",$/;"	s
+_location	node_modules/uuid/package.json	/^  "_location": "\/uuid",$/;"	s
+_location	node_modules/ws/package.json	/^  "_location": "\/ws",$/;"	s
+_mask	node_modules/ws/lib/buffer-util.js	/^function _mask(source, mask, output, offset, length) {$/;"	f
+_nodeId	node_modules/uuid/v1.js	/^var _nodeId;$/;"	v
+_phantomChildren	node_modules/async-limiter/package.json	/^  "_phantomChildren": {},$/;"	o
+_phantomChildren	node_modules/staylow/package.json	/^  "_phantomChildren": {},$/;"	o
+_phantomChildren	node_modules/uuid/package.json	/^  "_phantomChildren": {},$/;"	o
+_phantomChildren	node_modules/ws/package.json	/^  "_phantomChildren": {},$/;"	o
+_read	node_modules/ws/lib/stream.js	/^  duplex._read = function() {$/;"	f	function:duplex
+_requested	node_modules/async-limiter/package.json	/^  "_requested": {$/;"	o
+_requested	node_modules/staylow/package.json	/^  "_requested": {$/;"	o
+_requested	node_modules/uuid/package.json	/^  "_requested": {$/;"	o
+_requested	node_modules/ws/package.json	/^  "_requested": {$/;"	o
+_requiredBy	node_modules/async-limiter/package.json	/^  "_requiredBy": [$/;"	a
+_requiredBy	node_modules/staylow/package.json	/^  "_requiredBy": [$/;"	a
+_requiredBy	node_modules/uuid/package.json	/^  "_requiredBy": [$/;"	a
+_requiredBy	node_modules/ws/package.json	/^  "_requiredBy": [$/;"	a
+_resolved	node_modules/async-limiter/package.json	/^  "_resolved": "https:\/\/registry.npmjs.org\/async-limiter\/-\/async-limiter-1.0.1.tgz",$/;"	s
+_resolved	node_modules/staylow/package.json	/^  "_resolved": "https:\/\/registry.npmjs.org\/staylow\/-\/staylow-1.1.15.tgz",$/;"	s
+_resolved	node_modules/uuid/package.json	/^  "_resolved": "https:\/\/registry.npmjs.org\/uuid\/-\/uuid-3.3.3.tgz",$/;"	s
+_resolved	node_modules/ws/package.json	/^  "_resolved": "https:\/\/registry.npmjs.org\/ws\/-\/ws-7.1.2.tgz",$/;"	s
+_run	node_modules/async-limiter/index.js	/^Queue.prototype._run = function() {$/;"	m	class:Queue
+_shasum	node_modules/async-limiter/package.json	/^  "_shasum": "dd379e94f0db8310b08291f9d64c3209766617fd",$/;"	s
+_shasum	node_modules/staylow/package.json	/^  "_shasum": "3f58e65a9dbaef50dc6cc32b763372df02cf0042",$/;"	s
+_shasum	node_modules/uuid/package.json	/^  "_shasum": "4568f0216e78760ee1dbf3a4d2cf53e224112866",$/;"	s
+_shasum	node_modules/ws/package.json	/^  "_shasum": "c672d1629de8bb27a9699eb599be47aeeedd8f73",$/;"	s
+_spec	node_modules/async-limiter/package.json	/^  "_spec": "async-limiter@^1.0.0",$/;"	s
+_spec	node_modules/staylow/package.json	/^  "_spec": "staylow",$/;"	s
+_spec	node_modules/uuid/package.json	/^  "_spec": "uuid",$/;"	s
+_spec	node_modules/ws/package.json	/^  "_spec": "ws",$/;"	s
+_unmask	node_modules/ws/lib/buffer-util.js	/^function _unmask(buffer, mask) {$/;"	f
+_where	node_modules/async-limiter/package.json	/^  "_where": "\/Users\/antik\/Documents\/webdev\/web-socks\/node_modules\/ws",$/;"	s
+_where	node_modules/staylow/package.json	/^  "_where": "\/Users\/antik\/Documents\/webdev\/web-socks",$/;"	s
+_where	node_modules/uuid/package.json	/^  "_where": "\/Users\/antik\/Documents\/webdev\/web-socks",$/;"	s
+_where	node_modules/ws/package.json	/^  "_where": "\/Users\/antik\/Documents\/webdev\/web-socks",$/;"	s
+_write	node_modules/ws/lib/receiver.js	/^  _write(chunk, encoding, cb) {$/;"	m	class:Receiver
+_write	node_modules/ws/lib/stream.js	/^  duplex._write = function(chunk, encoding, callback) {$/;"	f	function:duplex
+_writeToOutput	node_modules/staylow/index.js	/^rl._writeToOutput = function _writeToOutput(stringToWrite) {$/;"	f
+_writeToOutput	node_modules/staylow/index.js	/^rl._writeToOutput = function _writeToOutput(stringToWrite) {$/;"	f	function:rl
+`t.concurrency`	node_modules/async-limiter/readme.md	/^### `t.concurrency`$/;"	S
+`t.length`	node_modules/async-limiter/readme.md	/^### `t.length`$/;"	S
+`t.onDone(fn)`	node_modules/async-limiter/readme.md	/^### `t.onDone(fn)`$/;"	S
+`t.push(element1, ..., elementN)`	node_modules/async-limiter/readme.md	/^### `t.push(element1, ..., elementN)`$/;"	S
+`t.splice(index , howMany[, element1[, ...[, elementN]]])`	node_modules/async-limiter/readme.md	/^### `t.splice(index , howMany[, element1[, ...[, elementN]]])`$/;"	S
+`t.unshift(element1, ..., elementN)`	node_modules/async-limiter/readme.md	/^### `t.unshift(element1, ..., elementN)`$/;"	S
+`var t = new Limiter([opts])`	node_modules/async-limiter/readme.md	/^### `var t = new Limiter([opts])`$/;"	S
+abortHandshake	node_modules/ws/lib/websocket-server.js	/^function abortHandshake(socket, code, message, headers) {$/;"	f
+abortHandshake	node_modules/ws/lib/websocket.js	/^function abortHandshake(websocket, stream, message) {$/;"	f
+accept	node_modules/ws/lib/permessage-deflate.js	/^  accept(configurations) {$/;"	m	class:PerMessageDeflate
+acceptAsClient	node_modules/ws/lib/permessage-deflate.js	/^  acceptAsClient(response) {$/;"	m	class:PerMessageDeflate
+acceptAsServer	node_modules/ws/lib/permessage-deflate.js	/^  acceptAsServer(offers) {$/;"	m	class:PerMessageDeflate
+addEventListener	node_modules/ws/lib/event-target.js	/^  addEventListener(method, listener) {$/;"	m	class:EventTarget
+addEventListener	node_modules/ws/lib/websocket.js	/^WebSocket.prototype.addEventListener = addEventListener;$/;"	m	class:WebSocket
+addListeners	node_modules/ws/lib/websocket-server.js	/^function addListeners(server, map) {$/;"	f
+addToHistory	node_modules/staylow/index.js	/^exports.addToHistory = function(entry) {$/;"	f	function:exports
+address	node_modules/ws/lib/websocket-server.js	/^  address() {$/;"	m	class:WebSocketServer
+args	node_modules/.bin/uuid	/^var args = process.argv.slice(2);$/;"	v
+args	node_modules/uuid/bin/uuid	/^var args = process.argv.slice(2);$/;"	v
+arrayAddMethods	node_modules/async-limiter/index.js	/^var arrayAddMethods = [$/;"	v
+assert	node_modules/.bin/uuid	/^var assert = require('assert');$/;"	v
+assert	node_modules/uuid/bin/uuid	/^var assert = require('assert');$/;"	v
+async-limiter	node_modules/ws/package.json	/^    "async-limiter": "^1.0.0"$/;"	s	object:dependencies
+async-limiter	package-lock.json	/^        "async-limiter": "^1.0.0"$/;"	s	object:dependencies.ws.requires
+async-limiter	package-lock.json	/^    "async-limiter": {$/;"	o	object:dependencies
+author	node_modules/async-limiter/package.json	/^  "author": {$/;"	o
+author	node_modules/staylow/package.json	/^  "author": {$/;"	o
+author	node_modules/ws/package.json	/^  "author": {$/;"	o
+author	package.json	/^  "author": "",$/;"	s
+backlog	node_modules/ws/lib/websocket-server.js	/^      backlog: null, \/\/ use default (511 as implemented in net.js)$/;"	p	class:WebSocketServer.constructor.options
+benchmark	node_modules/ws/package.json	/^    "benchmark": "^2.1.4",$/;"	s	object:devDependencies
+bin	node_modules/uuid/package.json	/^  "bin": {$/;"	o
+binary	client.js	/^      binary: []$/;"	p	class:WebSock.emit.flags
+binary	node_modules/ws/lib/websocket.js	/^      binary: typeof data !== 'string',$/;"	p	class:WebSocket.send.opts
+binary	server.js	/^        binary: []$/;"	p	class:WebSockServer.WebSock.emit.flags
+binary	server.js	/^        binary: []$/;"	p	class:WebSockServer.WebSock.emitTo.flags
+binary	server.js	/^      binary: []$/;"	p	class:WebSockServer.broadcast.flags
+binaryType	node_modules/ws/lib/websocket.js	/^  get binaryType() {$/;"	G	class:WebSocket
+binaryType	node_modules/ws/lib/websocket.js	/^  set binaryType(type) {$/;"	S	class:WebSocket
+bitRotateLeft	node_modules/uuid/lib/md5-browser.js	/^function bitRotateLeft(num, cnt) {$/;"	f
+broadcast	server.js	/^  this.broadcast = function broadcast(event, data) {$/;"	f	function:WebSockServer
+broadcast	server.js	/^  this.broadcast = function broadcast(event, data) {$/;"	m	class:WebSockServer
+browser	node_modules/uuid/package.json	/^  "browser": {$/;"	o
+browser	node_modules/ws/package.json	/^  "browser": "browser.js",$/;"	s
+bu	node_modules/ws/lib/buffer-util.js	/^  const bu = bufferUtil.BufferUtil || bufferUtil;$/;"	C
+buffer	node_modules/staylow/index.js	/^let buffer = []; \/\/Buffer of pressed keys$/;"	v
+bufferUtil	node_modules/ws/lib/buffer-util.js	/^  const bufferUtil = require('bufferutil');$/;"	C
+bufferUtil	node_modules/ws/lib/permessage-deflate.js	/^const bufferUtil = require('.\/buffer-util');$/;"	C
+bufferedAmount	node_modules/ws/lib/websocket.js	/^  get bufferedAmount() {$/;"	G	class:WebSocket
+bufferutil	node_modules/ws/package.json	/^    "bufferutil": "^4.0.1",$/;"	s	object:devDependencies
+bugs	node_modules/async-limiter/package.json	/^  "bugs": {$/;"	o
+bugs	node_modules/staylow/package.json	/^  "bugs": {$/;"	o
+bugs	node_modules/uuid/package.json	/^  "bugs": {$/;"	o
+bugs	node_modules/ws/package.json	/^  "bugs": {$/;"	o
+bugs	package.json	/^  "bugs": {$/;"	o
+bundleDependencies	node_modules/async-limiter/package.json	/^  "bundleDependencies": false,$/;"	b
+bundleDependencies	node_modules/staylow/package.json	/^  "bundleDependencies": false,$/;"	b
+bundleDependencies	node_modules/uuid/package.json	/^  "bundleDependencies": false,$/;"	b
+bundleDependencies	node_modules/ws/package.json	/^  "bundleDependencies": false,$/;"	b
+byteToHex	node_modules/uuid/lib/bytesToUuid.js	/^var byteToHex = [];$/;"	v
+bytesToUuid	node_modules/uuid/lib/bytesToUuid.js	/^function bytesToUuid(buf, offset) {$/;"	f
+bytesToUuid	node_modules/uuid/lib/v35.js	/^var bytesToUuid = require('.\/bytesToUuid');$/;"	v
+bytesToUuid	node_modules/uuid/v1.js	/^var bytesToUuid = require('.\/lib\/bytesToUuid');$/;"	v
+bytesToUuid	node_modules/uuid/v4.js	/^var bytesToUuid = require('.\/lib\/bytesToUuid');$/;"	v
+bytesToWords	node_modules/uuid/lib/md5-browser.js	/^function bytesToWords(input) {$/;"	f
+checkForBinary	client.js	/^function checkForBinary(data, flags) {$/;"	f
+checkForBinary	server.js	/^function checkForBinary(data, flags) {$/;"	f
+cleanup	node_modules/ws/lib/permessage-deflate.js	/^  cleanup() {$/;"	m	class:PerMessageDeflate
+clientTracking	node_modules/ws/lib/websocket-server.js	/^      clientTracking: true,$/;"	p	class:WebSocketServer.constructor.options
+close	node_modules/ws/lib/sender.js	/^  close(code, data, mask, cb) {$/;"	m	class:Sender
+close	node_modules/ws/lib/stream.js	/^  ws.once('close', function close() {$/;"	f
+close	node_modules/ws/lib/websocket-server.js	/^  close(cb) {$/;"	m	class:WebSocketServer
+close	node_modules/ws/lib/websocket.js	/^  close(code, data) {$/;"	m	class:WebSocket
+close	server.js	/^    this.close = function close() {$/;"	f	function:WebSockServer.WebSock
+close	server.js	/^    this.close = function close() {$/;"	m	class:WebSockServer.WebSock
+closeTimeout	node_modules/ws/lib/websocket.js	/^const closeTimeout = 30 * 1000;$/;"	C
+commitMessages	node_modules/ws/package.json	/^    "commitMessages": {$/;"	o	object:greenkeeper
+commitlint	node_modules/uuid/package.json	/^  "commitlint": {$/;"	o
+commitmsg	node_modules/uuid/package.json	/^    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS",$/;"	s	object:scripts
+completeUpgrade	node_modules/ws/lib/websocket-server.js	/^  completeUpgrade(key, extensions, req, socket, head, cb) {$/;"	m	class:WebSocketServer
+compress	node_modules/ws/lib/permessage-deflate.js	/^  compress(data, fin, callback) {$/;"	m	class:PerMessageDeflate
+compress	node_modules/ws/lib/websocket.js	/^      compress: true,$/;"	p	class:WebSocket.send.opts
+concat	node_modules/ws/lib/buffer-util.js	/^function concat(list, totalLength) {$/;"	f
+constructor	node_modules/ws/lib/event-target.js	/^  constructor(code, reason, target) {$/;"	m	class:CloseEvent
+constructor	node_modules/ws/lib/event-target.js	/^  constructor(data, target) {$/;"	m	class:MessageEvent
+constructor	node_modules/ws/lib/event-target.js	/^  constructor(error, target) {$/;"	m	class:ErrorEvent
+constructor	node_modules/ws/lib/event-target.js	/^  constructor(target) {$/;"	m	class:OpenEvent
+constructor	node_modules/ws/lib/event-target.js	/^  constructor(type, target) {$/;"	m	class:Event
+constructor	node_modules/ws/lib/permessage-deflate.js	/^  constructor(options, isServer, maxPayload) {$/;"	m	class:PerMessageDeflate
+constructor	node_modules/ws/lib/receiver.js	/^  constructor(binaryType, extensions, maxPayload) {$/;"	m	class:Receiver
+constructor	node_modules/ws/lib/sender.js	/^  constructor(socket, extensions) {$/;"	m	class:Sender
+constructor	node_modules/ws/lib/websocket-server.js	/^  constructor(options, callback) {$/;"	m	class:WebSocketServer
+constructor	node_modules/ws/lib/websocket.js	/^  constructor(address, protocols, options) {$/;"	m	class:WebSocket
+consume	node_modules/ws/lib/receiver.js	/^  consume(n) {$/;"	m	class:Receiver
+contributors	node_modules/uuid/package.json	/^  "contributors": [$/;"	a
+controlMessage	node_modules/ws/lib/receiver.js	/^  controlMessage(data) {$/;"	m	class:Receiver
+convertToBuffer	client.js	/^function convertToBuffer(data, flags, key) {$/;"	f
+convertToBuffer	server.js	/^function convertToBuffer(data, flags, key) {$/;"	f
+coverage	node_modules/async-limiter/package.json	/^    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",$/;"	s	object:scripts
+coveralls	node_modules/async-limiter/package.json	/^    "coveralls": "^3.0.3",$/;"	s	object:devDependencies
+coveralls	node_modules/ws/package.json	/^    "coveralls": "^3.0.3",$/;"	s	object:devDependencies
+createWebSocketStream	node_modules/ws/lib/stream.js	/^function createWebSocketStream(ws, options) {$/;"	f
+crypto	node_modules/uuid/lib/md5.js	/^var crypto = require('crypto');$/;"	v
+crypto	node_modules/uuid/lib/rng.js	/^var crypto = require('crypto');$/;"	v
+crypto	node_modules/uuid/lib/sha1.js	/^var crypto = require('crypto');$/;"	v
+dataMessage	node_modules/ws/lib/receiver.js	/^  dataMessage() {$/;"	m	class:Receiver
+decompress	node_modules/ws/lib/permessage-deflate.js	/^  decompress(data, fin, callback) {$/;"	m	class:PerMessageDeflate
+decompress	node_modules/ws/lib/receiver.js	/^  decompress(data, cb) {$/;"	m	class:Receiver
+defaultPrompt	node_modules/staylow/index.js	/^  defaultPrompt: '> ', \/\/Default prompt$/;"	p	class:globalOptions
+deflateOnData	node_modules/ws/lib/permessage-deflate.js	/^function deflateOnData(chunk) {$/;"	c
+dependencies	node_modules/async-limiter/package.json	/^  "dependencies": {},$/;"	o
+dependencies	node_modules/ws/package.json	/^  "dependencies": {$/;"	o
+dependencies	package-lock.json	/^  "dependencies": {$/;"	o
+dependencies	package.json	/^  "dependencies": {$/;"	o
+dependencyUpdate	node_modules/ws/package.json	/^      "dependencyUpdate": "[pkg] Update ${dependency} to version ${version}",$/;"	s	object:greenkeeper.commitMessages
+deprecated	node_modules/async-limiter/package.json	/^  "deprecated": false,$/;"	b
+deprecated	node_modules/staylow/package.json	/^  "deprecated": false,$/;"	b
+deprecated	node_modules/uuid/package.json	/^  "deprecated": false,$/;"	b
+deprecated	node_modules/ws/package.json	/^  "deprecated": false,$/;"	b
+dequeue	node_modules/ws/lib/sender.js	/^  dequeue() {$/;"	m	class:Sender
+description	node_modules/async-limiter/package.json	/^  "description": "asynchronous function queue with adjustable concurrency",$/;"	s
+description	node_modules/staylow/package.json	/^  "description": "A Node.JS module with a custom prompt for CLI chat applications.",$/;"	s
+description	node_modules/uuid/package.json	/^  "description": "RFC4122 (v1, v4, and v5) UUIDs",$/;"	s
+description	node_modules/ws/package.json	/^  "description": "Simple to use, blazing fast and thoroughly tested websocket client and server /;"	s
+description	package.json	/^  "description": "Send socks over the internet.",$/;"	s
+devDependencies	node_modules/async-limiter/package.json	/^  "devDependencies": {$/;"	o
+devDependencies	node_modules/uuid/package.json	/^  "devDependencies": {$/;"	o
+devDependencies	node_modules/ws/package.json	/^  "devDependencies": {$/;"	o
+devDependencyUpdate	node_modules/ws/package.json	/^      "devDependencyUpdate": "[pkg] Update ${dependency} to version ${version}"$/;"	s	object:greenkeeper.commitMessages
+dispatch	node_modules/ws/lib/sender.js	/^  dispatch(data, compress, options, cb) {$/;"	m	class:Sender
+doClose	node_modules/ws/lib/sender.js	/^  doClose(data, mask, cb) {$/;"	m	class:Sender
+doPing	node_modules/ws/lib/sender.js	/^  doPing(data, mask, readOnly, cb) {$/;"	m	class:Sender
+doPong	node_modules/ws/lib/sender.js	/^  doPong(data, mask, readOnly, cb) {$/;"	m	class:Sender
+done	node_modules/async-limiter/index.js	/^function done() {$/;"	c
+duplexOnEnd	node_modules/ws/lib/stream.js	/^function duplexOnEnd() {$/;"	f
+duplexOnError	node_modules/ws/lib/stream.js	/^function duplexOnError(err) {$/;"	c
+echo.websocket.org demo	node_modules/ws/README.md	/^### echo.websocket.org demo$/;"	S
+email	node_modules/uuid/package.json	/^      "email": "coolaj86@gmail.com"$/;"	s	object:contributors.2
+email	node_modules/uuid/package.json	/^      "email": "dev@tavan.de"$/;"	s	object:contributors.1
+email	node_modules/uuid/package.json	/^      "email": "robert@broofa.com"$/;"	s	object:contributors.0
+email	node_modules/uuid/package.json	/^      "email": "shtylman@gmail.com"$/;"	s	object:contributors.4
+email	node_modules/uuid/package.json	/^      "email": "vincent@zeroload.net"$/;"	s	object:contributors.3
+email	node_modules/ws/package.json	/^    "email": "einaros@gmail.com",$/;"	s	object:author
+emit	client.js	/^  this.emit = function emit(event, data) {$/;"	f	function:WebSock
+emit	client.js	/^  this.emit = function emit(event, data) {$/;"	m	class:WebSock
+emit	server.js	/^    this.emit = function emit(event, data) {$/;"	f	function:WebSockServer.WebSock
+emit	server.js	/^    this.emit = function emit(event, data) {$/;"	m	class:WebSockServer.WebSock
+emitClose	node_modules/ws/lib/stream.js	/^function emitClose(stream) {$/;"	f
+emitClose	node_modules/ws/lib/websocket-server.js	/^function emitClose(server) {$/;"	f
+emitClose	node_modules/ws/lib/websocket.js	/^  emitClose() {$/;"	m	class:WebSocket
+emitTo	server.js	/^    this.emitTo = function emitTo(id, event, data) {$/;"	f	function:WebSockServer.WebSock
+emitTo	server.js	/^    this.emitTo = function emitTo(id, event, data) {$/;"	m	class:WebSockServer.WebSock
+enqueue	node_modules/ws/lib/sender.js	/^  enqueue(params) {$/;"	m	class:Sender
+error	node_modules/ws/lib/receiver.js	/^function error(ErrorCtor, message, prefix, statusCode) {$/;"	f
+error	node_modules/ws/lib/stream.js	/^  ws.once('error', function error(err) {$/;"	f
+escapedName	node_modules/async-limiter/package.json	/^    "escapedName": "async-limiter",$/;"	s	object:_requested
+escapedName	node_modules/staylow/package.json	/^    "escapedName": "staylow",$/;"	s	object:_requested
+escapedName	node_modules/uuid/package.json	/^    "escapedName": "uuid",$/;"	s	object:_requested
+escapedName	node_modules/ws/package.json	/^    "escapedName": "ws",$/;"	s	object:_requested
+eslint	node_modules/async-limiter/package.json	/^    "eslint": "^5.16.0",$/;"	s	object:devDependencies
+eslint	node_modules/uuid/package.json	/^    "eslint": "6.2.0",$/;"	s	object:devDependencies
+eslint	node_modules/ws/package.json	/^    "eslint": "^6.0.0",$/;"	s	object:devDependencies
+eslint-config-prettier	node_modules/ws/package.json	/^    "eslint-config-prettier": "^6.0.0",$/;"	s	object:devDependencies
+eslint-plugin-mocha	node_modules/async-limiter/package.json	/^    "eslint-plugin-mocha": "^5.3.0",$/;"	s	object:devDependencies
+eslint-plugin-prettier	node_modules/ws/package.json	/^    "eslint-plugin-prettier": "^3.0.1",$/;"	s	object:devDependencies
+events	client.js	/^    events[event] = {callback, once: false};$/;"	c	class:WebSock.on
+events	client.js	/^    events[event] = {callback, once: true};$/;"	c	class:WebSock.once
+events	server.js	/^        events[event] = {callback, once: false};$/;"	c	class:WebSockServer.WebSock.on
+events	server.js	/^      events[event] = {callback, once: true};$/;"	c	class:WebSockServer.WebSock.once
+example	node_modules/async-limiter/package.json	/^    "example": "node example",$/;"	s	object:scripts
+exports	node_modules/uuid/lib/rng-browser.js	/^  module.exports = function whatwgRNG() {$/;"	f	function:module
+exports	node_modules/uuid/lib/rng.js	/^module.exports = function nodeRNG() {$/;"	f	function:module
+exports	node_modules/uuid/lib/v35.js	/^module.exports = function(name, version, hashfunc) {$/;"	f	function:module
+exports	node_modules/ws/browser.js	/^module.exports = function() {$/;"	f	function:module
+exports	node_modules/ws/lib/buffer-util.js	/^  module.exports = {$/;"	c	class:module
+exports	node_modules/ws/lib/constants.js	/^module.exports = {$/;"	c	class:module
+extends	node_modules/uuid/package.json	/^    "extends": [$/;"	a	object:commitlint
+extensionName	node_modules/ws/lib/permessage-deflate.js	/^  static get extensionName() {$/;"	G	class:PerMessageDeflate
+extensions	node_modules/ws/lib/websocket.js	/^  get extensions() {$/;"	G	class:WebSocket
+f	node_modules/uuid/lib/sha1-browser.js	/^function f(s, x, y, z) {$/;"	f
+fetchSpec	node_modules/async-limiter/package.json	/^    "fetchSpec": "^1.0.0"$/;"	s	object:_requested
+fetchSpec	node_modules/staylow/package.json	/^    "fetchSpec": "latest"$/;"	s	object:_requested
+fetchSpec	node_modules/uuid/package.json	/^    "fetchSpec": "latest"$/;"	s	object:_requested
+fetchSpec	node_modules/ws/package.json	/^    "fetchSpec": "latest"$/;"	s	object:_requested
+files	node_modules/ws/package.json	/^  "files": [$/;"	a
+fin	node_modules/ws/lib/sender.js	/^        fin: options.fin,$/;"	p	class:Sender.send.opts
+fin	node_modules/ws/lib/websocket.js	/^      fin: true,$/;"	p	class:WebSocket.send.opts
+finish	node_modules/ws/lib/stream.js	/^      ws._socket.once('finish', function finish() {$/;"	f
+flags	client.js	/^    let flags = {$/;"	c	class:WebSock.emit
+flags	server.js	/^      let flags = {$/;"	c	class:WebSockServer.WebSock.emit
+flags	server.js	/^      let flags = {$/;"	c	class:WebSockServer.WebSock.emitTo
+flags	server.js	/^    let flags = {$/;"	c	class:WebSockServer.broadcast
+followRedirects	node_modules/ws/lib/websocket.js	/^    followRedirects: false,$/;"	p	class:initAsClient.opts
+format	node_modules/ws/lib/extension.js	/^function format(extensions) {$/;"	f
+frame	node_modules/ws/lib/sender.js	/^  static frame(data, options) {$/;"	m	class:Sender
+generateUUID	node_modules/uuid/lib/v35.js	/^  var generateUUID = function(value, namespace, buf, offset) {$/;"	f	function:module.exports
+getData	node_modules/ws/lib/receiver.js	/^  getData(cb) {$/;"	m	class:Receiver
+getInfo	node_modules/ws/lib/receiver.js	/^  getInfo() {$/;"	m	class:Receiver
+getMask	node_modules/ws/lib/receiver.js	/^  getMask() {$/;"	m	class:Receiver
+getPayloadLength16	node_modules/ws/lib/receiver.js	/^  getPayloadLength16() {$/;"	m	class:Receiver
+getPayloadLength64	node_modules/ws/lib/receiver.js	/^  getPayloadLength64() {$/;"	m	class:Receiver
+getRandomValues	node_modules/uuid/lib/rng-browser.js	/^var getRandomValues = (typeof(crypto) != 'undefined' && crypto.getRandomValues && crypto.getRand/;"	v
+globalMask	node_modules/staylow/index.js	/^  globalMask: '*', \/\/Mask for muted inputs$/;"	p	class:globalOptions
+globalOptions	node_modules/staylow/index.js	/^let globalOptions = {$/;"	c
+greenkeeper	node_modules/ws/package.json	/^  "greenkeeper": {$/;"	o
+handleProtocols	node_modules/ws/lib/websocket-server.js	/^      handleProtocols: null,$/;"	p	class:WebSocketServer.constructor.options
+handleUpgrade	node_modules/ws/lib/websocket-server.js	/^  handleUpgrade(req, socket, head, cb) {$/;"	m	class:WebSocketServer
+haveLength	node_modules/ws/lib/receiver.js	/^  haveLength() {$/;"	m	class:Receiver
+headers	node_modules/ws/lib/websocket-server.js	/^    headers = {$/;"	c	class:abortHandshake
+headers	node_modules/ws/lib/websocket.js	/^  opts.headers = {$/;"	c	class:opts
+homepage	node_modules/async-limiter/package.json	/^  "homepage": "https:\/\/github.com\/strml\/async-limiter#readme",$/;"	s
+homepage	node_modules/staylow/package.json	/^  "homepage": "https:\/\/github.com\/jurelik\/staylow#readme",$/;"	s
+homepage	node_modules/uuid/package.json	/^  "homepage": "https:\/\/github.com\/kelektiv\/node-uuid#readme",$/;"	s
+homepage	node_modules/ws/package.json	/^  "homepage": "https:\/\/github.com\/websockets\/ws",$/;"	s
+homepage	package.json	/^  "homepage": "https:\/\/github.com\/jurelik\/web-socks#readme",$/;"	s
+host	node_modules/ws/lib/websocket-server.js	/^      host: null,$/;"	p	class:WebSocketServer.constructor.options
+http	node_modules/ws/lib/websocket.js	/^const http = require('http');$/;"	C
+https	node_modules/ws/lib/websocket.js	/^const https = require('https');$/;"	C
+husky	node_modules/uuid/package.json	/^    "husky": "3.0.4",$/;"	s	object:devDependencies
+inflateOnData	node_modules/ws/lib/permessage-deflate.js	/^function inflateOnData(chunk) {$/;"	c
+inflateOnError	node_modules/ws/lib/permessage-deflate.js	/^function inflateOnError(err) {$/;"	c
+info	node_modules/ws/lib/websocket-server.js	/^      const info = {$/;"	c	class:WebSocketServer.handleUpgrade
+initAsClient	node_modules/ws/lib/websocket.js	/^function initAsClient(websocket, address, protocols, options) {$/;"	f
+integration	node_modules/ws/package.json	/^    "integration": "npm run lint && mocha --throw-deprecation test\/*.integration.js",$/;"	s	object:scripts
+integrity	package-lock.json	/^      "integrity": "sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H\/QbJFMCr+uO2kwohwXQPxw\/9OCxp05r/;"	s	object:dependencies.async-limiter
+integrity	package-lock.json	/^      "integrity": "sha512-gftXq3XI81cJCgkUiAVixA0raD9IVmXqsylCrjRygw4+UOOGzPoxnQ6r\/CnVL9i+mDnc/;"	s	object:dependencies.ws
+integrity	package-lock.json	/^      "integrity": "sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2\/6Mtx+Uys6ia/;"	s	object:dependencies.uuid
+integrity	package-lock.json	/^      "integrity": "sha512-zY\/akFy+O3aLK+NBhyyqxfiob8NtoM79B+wswbrAqQSFtKMuOcrlpJf4MPXI1wuFPQXB/;"	s	object:dependencies.staylow
+intelli-espower-loader	node_modules/async-limiter/package.json	/^    "intelli-espower-loader": "^1.0.1",$/;"	s	object:devDependencies
+isValidUTF8	node_modules/ws/lib/validation.js	/^  const isValidUTF8 = require('utf-8-validate');$/;"	C
+kBuffers	node_modules/ws/lib/permessage-deflate.js	/^const kBuffers = Symbol('buffers');$/;"	C
+kCallback	node_modules/ws/lib/permessage-deflate.js	/^const kCallback = Symbol('callback');$/;"	C
+kError	node_modules/ws/lib/permessage-deflate.js	/^const kError = Symbol('error');$/;"	C
+kPerMessageDeflate	node_modules/ws/lib/permessage-deflate.js	/^const kPerMessageDeflate = Symbol('permessage-deflate');$/;"	C
+kStatusCode	node_modules/ws/lib/constants.js	/^  kStatusCode: Symbol('status-code'),$/;"	p	class:module.exports
+kTotalLength	node_modules/ws/lib/permessage-deflate.js	/^const kTotalLength = Symbol('total-length');$/;"	C
+kUsedByWebSocketServer	node_modules/ws/lib/websocket-server.js	/^const kUsedByWebSocketServer = Symbol('kUsedByWebSocketServer');$/;"	C
+kWebSocket	node_modules/ws/lib/constants.js	/^  kWebSocket: Symbol('websocket'),$/;"	p	class:module.exports
+keyRegex	node_modules/ws/lib/websocket-server.js	/^const keyRegex = \/^[+\/0-9A-Za-z]{22}==$\/;$/;"	C
+keywords	node_modules/async-limiter/package.json	/^  "keywords": [$/;"	a
+keywords	node_modules/staylow/package.json	/^  "keywords": [$/;"	a
+keywords	node_modules/uuid/package.json	/^  "keywords": [$/;"	a
+keywords	node_modules/ws/package.json	/^  "keywords": [$/;"	a
+leftCounter	node_modules/staylow/index.js	/^let leftCounter = 0; \/\/How many times has left\/right been pressed$/;"	v
+license	node_modules/async-limiter/package.json	/^  "license": "MIT",$/;"	s
+license	node_modules/staylow/package.json	/^  "license": "ISC",$/;"	s
+license	node_modules/uuid/package.json	/^  "license": "MIT",$/;"	s
+license	node_modules/ws/package.json	/^  "license": "MIT",$/;"	s
+license	package.json	/^  "license": "ISC",$/;"	s
+lint	node_modules/async-limiter/package.json	/^    "lint": "eslint .",$/;"	s	object:scripts
+lint	node_modules/ws/package.json	/^    "lint": "eslint --ignore-path .gitignore . && prettier --check --ignore-path .gitignore \\"*/;"	s	object:scripts
+lockfileVersion	package-lock.json	/^  "lockfileVersion": 1,$/;"	n
+log	node_modules/staylow/index.js	/^exports.log = function(text) {$/;"	f	function:exports
+logOnEnter	node_modules/staylow/index.js	/^  logOnEnter: 'true' \/\/Behavior on 'enter' keypress$/;"	p	class:globalOptions
+main	node_modules/staylow/package.json	/^  "main": "index.js",$/;"	s
+main	node_modules/ws/package.json	/^  "main": "index.js",$/;"	s
+main	package.json	/^  "main": "index.js",$/;"	s
+mask	node_modules/ws/lib/buffer-util.js	/^    mask(source, mask, output, offset, length) {$/;"	m	class:module.exports
+mask	node_modules/ws/lib/buffer-util.js	/^    mask: _mask,$/;"	p	class:module.exports
+mask	node_modules/ws/lib/sender.js	/^        mask: options.mask,$/;"	p	class:Sender.send.opts
+mask	node_modules/ws/lib/sender.js	/^const mask = Buffer.alloc(4);$/;"	C
+mask	node_modules/ws/lib/websocket.js	/^      mask: !this._isServer,$/;"	p	class:WebSocket.send.opts
+mathRNG	node_modules/uuid/lib/rng-browser.js	/^  module.exports = function mathRNG() {$/;"	f
+maxPayload	node_modules/ws/lib/websocket-server.js	/^      maxPayload: 100 * 1024 * 1024,$/;"	p	class:WebSocketServer.constructor.options
+maxPayload	node_modules/ws/lib/websocket.js	/^    maxPayload: 100 * 1024 * 1024,$/;"	p	class:initAsClient.opts
+maxRedirects	node_modules/ws/lib/websocket.js	/^    maxRedirects: 10,$/;"	p	class:initAsClient.opts
+md	node_modules/uuid/package.json	/^    "md": "runmd --watch --output=README.md README_js.md",$/;"	s	object:scripts
+md5	node_modules/uuid/lib/md5-browser.js	/^function md5(bytes) {$/;"	f
+md5	node_modules/uuid/lib/md5.js	/^function md5(bytes) {$/;"	f
+md5	node_modules/uuid/v3.js	/^var md5 = require('.\/lib\/md5');$/;"	v
+md5ToHexEncodedArray	node_modules/uuid/lib/md5-browser.js	/^function md5ToHexEncodedArray(input) {$/;"	f
+md5cmn	node_modules/uuid/lib/md5-browser.js	/^function md5cmn(q, a, b, x, s, t) {$/;"	f
+md5ff	node_modules/uuid/lib/md5-browser.js	/^function md5ff(a, b, c, d, x, s, t) {$/;"	f
+md5gg	node_modules/uuid/lib/md5-browser.js	/^function md5gg(a, b, c, d, x, s, t) {$/;"	f
+md5hh	node_modules/uuid/lib/md5-browser.js	/^function md5hh(a, b, c, d, x, s, t) {$/;"	f
+md5ii	node_modules/uuid/lib/md5-browser.js	/^function md5ii(a, b, c, d, x, s, t) {$/;"	f
+message	node_modules/ws/lib/stream.js	/^  ws.on('message', function message(msg) {$/;"	f
+mocha	node_modules/async-limiter/package.json	/^    "mocha": "^6.1.4",$/;"	s	object:devDependencies
+mocha	node_modules/uuid/package.json	/^    "mocha": "6.2.0",$/;"	s	object:devDependencies
+mocha	node_modules/ws/package.json	/^    "mocha": "^6.1.3",$/;"	s	object:devDependencies
+muted	node_modules/staylow/index.js	/^let muted = false; \/\/Is mute active?$/;"	v
+name	node_modules/.bin/uuid	/^    var name = args.shift();$/;"	v
+name	node_modules/async-limiter/package.json	/^    "name": "Samuel Reed"$/;"	s	object:author
+name	node_modules/async-limiter/package.json	/^    "name": "async-limiter",$/;"	s	object:_requested
+name	node_modules/async-limiter/package.json	/^  "name": "async-limiter",$/;"	s
+name	node_modules/staylow/package.json	/^    "name": "jurelik"$/;"	s	object:author
+name	node_modules/staylow/package.json	/^    "name": "staylow",$/;"	s	object:_requested
+name	node_modules/staylow/package.json	/^  "name": "staylow",$/;"	s
+name	node_modules/uuid/bin/uuid	/^    var name = args.shift();$/;"	v
+name	node_modules/uuid/package.json	/^      "name": "AJ ONeal",$/;"	s	object:contributors.2
+name	node_modules/uuid/package.json	/^      "name": "Christoph Tavan",$/;"	s	object:contributors.1
+name	node_modules/uuid/package.json	/^      "name": "Robert Kieffer",$/;"	s	object:contributors.0
+name	node_modules/uuid/package.json	/^      "name": "Roman Shtylman",$/;"	s	object:contributors.4
+name	node_modules/uuid/package.json	/^      "name": "Vincent Voyer",$/;"	s	object:contributors.3
+name	node_modules/uuid/package.json	/^    "name": "uuid",$/;"	s	object:_requested
+name	node_modules/uuid/package.json	/^  "name": "uuid",$/;"	s
+name	node_modules/ws/package.json	/^    "name": "Einar Otto Stangvik",$/;"	s	object:author
+name	node_modules/ws/package.json	/^    "name": "ws",$/;"	s	object:_requested
+name	node_modules/ws/package.json	/^  "name": "ws",$/;"	s
+name	package-lock.json	/^  "name": "web-socks",$/;"	s
+name	package.json	/^  "name": "web-socks",$/;"	s
+namespace	node_modules/.bin/uuid	/^    var namespace = args.shift();$/;"	v
+namespace	node_modules/uuid/bin/uuid	/^    var namespace = args.shift();$/;"	v
+net	node_modules/ws/lib/websocket.js	/^const net = require('net');$/;"	C
+netConnect	node_modules/ws/lib/websocket.js	/^function netConnect(options) {$/;"	f
+noServer	node_modules/ws/lib/websocket-server.js	/^      noServer: false,$/;"	p	class:WebSocketServer.constructor.options
+nodeRNG	node_modules/uuid/lib/rng.js	/^module.exports = function nodeRNG() {$/;"	f
+normalizeParams	node_modules/ws/lib/permessage-deflate.js	/^  normalizeParams(configurations) {$/;"	m	class:PerMessageDeflate
+nyc	node_modules/async-limiter/package.json	/^    "nyc": "^14.1.1",$/;"	s	object:devDependencies
+nyc	node_modules/ws/package.json	/^    "nyc": "^14.0.0",$/;"	s	object:devDependencies
+offer	node_modules/ws/lib/permessage-deflate.js	/^  offer() {$/;"	m	class:PerMessageDeflate
+on	client.js	/^  this.on = function on(event, callback) {$/;"	f	function:WebSock
+on	client.js	/^  this.on = function on(event, callback) {$/;"	m	class:WebSock
+on	server.js	/^    this.on = function on(event, callback) {$/;"	f	function:WebSockServer.WebSock
+on	server.js	/^    this.on = function on(event, callback) {$/;"	m	class:WebSockServer.WebSock
+on	server.js	/^  this.on = function on(event, callback) {$/;"	f	function:WebSockServer
+on	server.js	/^  this.on = function on(event, callback) {$/;"	m	class:WebSockServer
+onClose	node_modules/ws/lib/event-target.js	/^    function onClose(code, message) {$/;"	f	function:EventTarget.addEventListener
+onDone	node_modules/async-limiter/index.js	/^Queue.prototype.onDone = function(cb) {$/;"	m	class:Queue
+onError	node_modules/ws/lib/event-target.js	/^    function onError(error) {$/;"	f	function:EventTarget.addEventListener
+onMessage	node_modules/ws/lib/event-target.js	/^    function onMessage(data) {$/;"	f	function:EventTarget.addEventListener
+onOpen	node_modules/ws/lib/event-target.js	/^    function onOpen() {$/;"	f	function:EventTarget.addEventListener
+once	client.js	/^    events[event] = {callback, once: false};$/;"	p	class:WebSock.on.events
+once	client.js	/^    events[event] = {callback, once: true};$/;"	p	class:WebSock.once.events
+once	client.js	/^  this.once = function once(event, callback) {$/;"	f	function:WebSock
+once	client.js	/^  this.once = function once(event, callback) {$/;"	m	class:WebSock
+once	server.js	/^        events[event] = {callback, once: false};$/;"	p	class:WebSockServer.WebSock.on.events
+once	server.js	/^      events[event] = {callback, once: true};$/;"	p	class:WebSockServer.WebSock.once.events
+once	server.js	/^    this.once = function once(event, callback) {$/;"	f	function:WebSockServer.WebSock
+once	server.js	/^    this.once = function once(event, callback) {$/;"	m	class:WebSockServer.WebSock
+open	node_modules/ws/lib/stream.js	/^    ws.once('open', function open() {$/;"	f
+options	node_modules/staylow/index.js	/^exports.options = function(options) {$/;"	f	function:exports
+options	node_modules/ws/lib/websocket-server.js	/^    options = {$/;"	c	class:WebSocketServer.constructor
+opts	node_modules/ws/lib/sender.js	/^      const opts = {$/;"	c	class:Sender.send
+opts	node_modules/ws/lib/websocket.js	/^    const opts = {$/;"	c	class:WebSocket.send
+opts	node_modules/ws/lib/websocket.js	/^  const opts = {$/;"	c	class:initAsClient
+origin	node_modules/ws/lib/websocket-server.js	/^        origin:$/;"	p	class:WebSocketServer.handleUpgrade.info
+parse	node_modules/ws/lib/extension.js	/^function parse(header) {$/;"	f
+path	node_modules/ws/lib/websocket-server.js	/^      path: null,$/;"	p	class:WebSocketServer.constructor.options
+pause	node_modules/staylow/index.js	/^exports.pause = function() {$/;"	f	function:exports
+perMessageDeflate	node_modules/ws/lib/websocket-server.js	/^      perMessageDeflate: false,$/;"	p	class:WebSocketServer.constructor.options
+perMessageDeflate	node_modules/ws/lib/websocket.js	/^    perMessageDeflate: true,$/;"	p	class:initAsClient.opts
+ping	node_modules/ws/lib/sender.js	/^  ping(data, mask, cb) {$/;"	m	class:Sender
+ping	node_modules/ws/lib/websocket.js	/^  ping(data, mask, cb) {$/;"	m	class:WebSocket
+pong	node_modules/ws/lib/sender.js	/^  pong(data, mask, cb) {$/;"	m	class:Sender
+pong	node_modules/ws/lib/websocket.js	/^  pong(data, mask, cb) {$/;"	m	class:WebSocket
+port	node_modules/ws/lib/websocket-server.js	/^      port: null,$/;"	p	class:WebSocketServer.constructor.options
+power-assert	node_modules/async-limiter/package.json	/^    "power-assert": "^1.6.1"$/;"	s	object:devDependencies
+prepare	node_modules/uuid/package.json	/^    "prepare": "runmd --output=README.md README_js.md",$/;"	s	object:scripts
+prettier	node_modules/ws/package.json	/^    "prettier": "^1.17.0",$/;"	s	object:devDependencies
+prompt	node_modules/staylow/index.js	/^exports.prompt = function(question, mute, callback) {$/;"	f	function:exports
+prompt	test-client.js	/^function prompt() {$/;"	f
+promptActive	node_modules/staylow/index.js	/^let promptActive = false; \/\/Is prompt active?$/;"	v
+protocolVersion	node_modules/ws/lib/websocket.js	/^    protocolVersion: protocolVersions[1],$/;"	p	class:initAsClient.opts
+protocolVersions	node_modules/ws/lib/websocket.js	/^const protocolVersions = [8, 13];$/;"	C
+push	node_modules/ws/lib/extension.js	/^function push(dest, name, elem) {$/;"	f
+question	node_modules/staylow/index.js	/^    rl.question = function(query, cb) {$/;"	f	function:rl
+raw	node_modules/async-limiter/package.json	/^    "raw": "async-limiter@^1.0.0",$/;"	s	object:_requested
+raw	node_modules/staylow/package.json	/^    "raw": "staylow",$/;"	s	object:_requested
+raw	node_modules/uuid/package.json	/^    "raw": "uuid",$/;"	s	object:_requested
+raw	node_modules/ws/package.json	/^    "raw": "ws",$/;"	s	object:_requested
+rawSpec	node_modules/async-limiter/package.json	/^    "rawSpec": "^1.0.0",$/;"	s	object:_requested
+rawSpec	node_modules/staylow/package.json	/^    "rawSpec": "",$/;"	s	object:_requested
+rawSpec	node_modules/uuid/package.json	/^    "rawSpec": "",$/;"	s	object:_requested
+rawSpec	node_modules/ws/package.json	/^    "rawSpec": "",$/;"	s	object:_requested
+readOnly	node_modules/ws/lib/sender.js	/^        readOnly: toBuffer.readOnly$/;"	p	class:Sender.send.opts
+readline	node_modules/staylow/index.js	/^const readline = require('readline');$/;"	C
+readyStates	node_modules/ws/lib/websocket.js	/^const readyStates = ['CONNECTING', 'OPEN', 'CLOSING', 'CLOSED'];$/;"	C
+receiverOnConclude	node_modules/ws/lib/websocket.js	/^function receiverOnConclude(code, reason) {$/;"	f
+receiverOnDrain	node_modules/ws/lib/stream.js	/^  function receiverOnDrain() {$/;"	f	function:createWebSocketStream
+receiverOnDrain	node_modules/ws/lib/websocket.js	/^function receiverOnDrain() {$/;"	c
+receiverOnError	node_modules/ws/lib/websocket.js	/^function receiverOnError(err) {$/;"	f
+receiverOnFinish	node_modules/ws/lib/websocket.js	/^function receiverOnFinish() {$/;"	c
+receiverOnMessage	node_modules/ws/lib/websocket.js	/^function receiverOnMessage(data) {$/;"	c
+receiverOnPing	node_modules/ws/lib/websocket.js	/^function receiverOnPing(data) {$/;"	f
+receiverOnPong	node_modules/ws/lib/websocket.js	/^function receiverOnPong(data) {$/;"	c
+registry	node_modules/async-limiter/package.json	/^    "registry": true,$/;"	b	object:_requested
+registry	node_modules/staylow/package.json	/^    "registry": true,$/;"	b	object:_requested
+registry	node_modules/uuid/package.json	/^    "registry": true,$/;"	b	object:_requested
+registry	node_modules/ws/package.json	/^    "registry": true,$/;"	b	object:_requested
+release	node_modules/uuid/package.json	/^    "release": "standard-version",$/;"	s	object:scripts
+removeEventListener	node_modules/ws/lib/event-target.js	/^  removeEventListener(method, listener) {$/;"	m	class:EventTarget
+removeEventListener	node_modules/ws/lib/websocket.js	/^WebSocket.prototype.removeEventListener = removeEventListener;$/;"	m	class:WebSocket
+removeListener	client.js	/^  this.removeListener = function removeListener(event) {$/;"	f	function:WebSock
+removeListener	client.js	/^  this.removeListener = function removeListener(event) {$/;"	m	class:WebSock
+removeListeners	node_modules/ws/lib/websocket-server.js	/^  return function removeListeners() {$/;"	f	function:addListeners
+repository	node_modules/async-limiter/package.json	/^  "repository": {$/;"	o
+repository	node_modules/staylow/package.json	/^  "repository": {$/;"	o
+repository	node_modules/uuid/package.json	/^  "repository": {$/;"	o
+repository	node_modules/ws/package.json	/^  "repository": {$/;"	o
+repository	package.json	/^  "repository": {$/;"	o
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.ws
+requires	package-lock.json	/^  "requires": true,$/;"	b
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/async-limiter\/-\/async-limiter-1.0.1.tgz",$/;"	s	object:dependencies.async-limiter
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/staylow\/-\/staylow-1.1.15.tgz",$/;"	s	object:dependencies.staylow
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/uuid\/-\/uuid-3.3.3.tgz",$/;"	s	object:dependencies.uuid
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/ws\/-\/ws-7.1.2.tgz",$/;"	s	object:dependencies.ws
+resume	node_modules/staylow/index.js	/^exports.resume = function() {$/;"	f	function:exports
+rl	node_modules/staylow/index.js	/^const rl = readline.createInterface({$/;"	C
+rnds	node_modules/uuid/lib/rng-browser.js	/^  var rnds = new Array(16);$/;"	v
+rnds8	node_modules/uuid/lib/rng-browser.js	/^  var rnds8 = new Uint8Array(16); \/\/ eslint-disable-line no-undef$/;"	v
+rng	node_modules/uuid/v1.js	/^var rng = require('.\/lib\/rng');$/;"	v
+rng	node_modules/uuid/v4.js	/^var rng = require('.\/lib\/rng');$/;"	v
+runmd	node_modules/uuid/package.json	/^    "runmd": "1.2.1",$/;"	s	object:devDependencies
+safeAdd	node_modules/uuid/lib/md5-browser.js	/^function safeAdd(x, y) {$/;"	f
+saveSpec	node_modules/async-limiter/package.json	/^    "saveSpec": null,$/;"	z	object:_requested
+saveSpec	node_modules/staylow/package.json	/^    "saveSpec": null,$/;"	z	object:_requested
+saveSpec	node_modules/uuid/package.json	/^    "saveSpec": null,$/;"	z	object:_requested
+saveSpec	node_modules/ws/package.json	/^    "saveSpec": null,$/;"	z	object:_requested
+scripts	node_modules/async-limiter/package.json	/^  "scripts": {$/;"	o
+scripts	node_modules/staylow/package.json	/^  "scripts": {$/;"	o
+scripts	node_modules/uuid/package.json	/^  "scripts": {$/;"	o
+scripts	node_modules/ws/package.json	/^  "scripts": {$/;"	o
+scripts	package.json	/^  "scripts": {$/;"	o
+secure	node_modules/ws/lib/websocket-server.js	/^        secure: !!(req.connection.authorized || req.connection.encrypted),$/;"	p	class:WebSocketServer.handleUpgrade.info
+send	node_modules/ws/lib/sender.js	/^  send(data, options, cb) {$/;"	m	class:Sender
+send	node_modules/ws/lib/websocket.js	/^  send(data, options, cb) {$/;"	m	class:WebSocket
+sendAfterClose	node_modules/ws/lib/websocket.js	/^function sendAfterClose(websocket, data, cb) {$/;"	f
+sendFrame	node_modules/ws/lib/sender.js	/^  sendFrame(list, cb) {$/;"	m	class:Sender
+server	index.js	/^const server = new WebSockServer(4000);$/;"	C
+server	node_modules/ws/lib/websocket-server.js	/^      server: null,$/;"	p	class:WebSocketServer.constructor.options
+setSocket	node_modules/ws/lib/websocket.js	/^  setSocket(socket, head, maxPayload) {$/;"	m	class:WebSocket
+sha1	node_modules/uuid/lib/sha1-browser.js	/^function sha1(bytes) {$/;"	f
+sha1	node_modules/uuid/lib/sha1.js	/^function sha1(bytes) {$/;"	f
+sha1	node_modules/uuid/v5.js	/^var sha1 = require('.\/lib\/sha1');$/;"	v
+shouldHandle	node_modules/ws/lib/websocket-server.js	/^  shouldHandle(req) {$/;"	m	class:WebSocketServer
+showHistory	node_modules/staylow/index.js	/^exports.showHistory = function() {$/;"	f	function:exports
+sl	test-client.js	/^const sl = require('staylow');$/;"	C
+sock	test-client.js	/^const sock = new WebSock('ws:\/\/localhost:4000', {reconnectAttempts: 3});$/;"	C
+socketOnClose	node_modules/ws/lib/websocket.js	/^function socketOnClose() {$/;"	c
+socketOnData	node_modules/ws/lib/websocket.js	/^function socketOnData(chunk) {$/;"	f
+socketOnEnd	node_modules/ws/lib/websocket.js	/^function socketOnEnd() {$/;"	c
+socketOnError	node_modules/ws/lib/websocket-server.js	/^function socketOnError() {$/;"	c
+socketOnError	node_modules/ws/lib/websocket.js	/^function socketOnError() {$/;"	c
+standard-version	node_modules/uuid/package.json	/^    "standard-version": "7.0.0"$/;"	s	object:devDependencies
+startLoop	node_modules/ws/lib/receiver.js	/^  startLoop(cb) {$/;"	m	class:Receiver
+staylow	node_modules/staylow/README.md	/^# staylow$/;"	c
+staylow	package-lock.json	/^    "staylow": {$/;"	o	object:dependencies
+staylow	package.json	/^    "staylow": "^1.1.15",$/;"	s	object:dependencies
+stringToBytes	node_modules/uuid/lib/v35.js	/^function stringToBytes(str) {$/;"	f
+tempHistory	node_modules/staylow/index.js	/^let tempHistory = []; \/\/Store history while input is muted$/;"	v
+terminate	node_modules/ws/lib/websocket.js	/^  terminate() {$/;"	m	class:WebSocket
+test	node_modules/async-limiter/package.json	/^    "test": "mocha --require intelli-espower-loader test\/",$/;"	s	object:scripts
+test	node_modules/staylow/package.json	/^    "test": "echo \\"Error: no test specified\\" && exit 1"$/;"	s	object:scripts
+test	node_modules/uuid/package.json	/^    "test": "mocha test\/test.js"$/;"	s	object:scripts
+test	node_modules/ws/package.json	/^    "test": "npm run lint && nyc --reporter=html --reporter=text mocha --throw-deprecation test\//;"	s	object:scripts
+test	package.json	/^    "test": "echo \\"Error: no test specified\\" && exit 1"$/;"	s	object:scripts
+tls	node_modules/ws/lib/websocket.js	/^const tls = require('tls');$/;"	C
+tlsConnect	node_modules/ws/lib/websocket.js	/^function tlsConnect(options) {$/;"	f
+toArrayBuffer	node_modules/ws/lib/buffer-util.js	/^function toArrayBuffer(buf) {$/;"	f
+toBuffer	node_modules/ws/lib/buffer-util.js	/^function toBuffer(data) {$/;"	f
+tokenChars	node_modules/ws/lib/extension.js	/^const tokenChars = [$/;"	C
+travis	node_modules/async-limiter/package.json	/^    "travis": "npm run lint && npm run test"$/;"	s	object:scripts
+type	node_modules/async-limiter/package.json	/^    "type": "git",$/;"	s	object:repository
+type	node_modules/async-limiter/package.json	/^    "type": "range",$/;"	s	object:_requested
+type	node_modules/staylow/package.json	/^    "type": "git",$/;"	s	object:repository
+type	node_modules/staylow/package.json	/^    "type": "tag",$/;"	s	object:_requested
+type	node_modules/uuid/package.json	/^    "type": "git",$/;"	s	object:repository
+type	node_modules/uuid/package.json	/^    "type": "tag",$/;"	s	object:_requested
+type	node_modules/ws/package.json	/^    "type": "git",$/;"	s	object:repository
+type	node_modules/ws/package.json	/^    "type": "tag",$/;"	s	object:_requested
+type	package.json	/^    "type": "git",$/;"	s	object:repository
+unmask	node_modules/ws/lib/buffer-util.js	/^    unmask(buffer, mask) {$/;"	m	class:module.exports
+unmask	node_modules/ws/lib/buffer-util.js	/^    unmask: _unmask$/;"	p	class:module.exports
+upCounter	node_modules/staylow/index.js	/^let upCounter = 0; \/\/How many times has up\/down been pressed$/;"	v
+url	node_modules/async-limiter/package.json	/^    "url": "git+https:\/\/github.com\/strml\/async-limiter.git"$/;"	s	object:repository
+url	node_modules/async-limiter/package.json	/^    "url": "https:\/\/github.com\/strml\/async-limiter\/issues"$/;"	s	object:bugs
+url	node_modules/staylow/package.json	/^    "url": "git+https:\/\/github.com\/jurelik\/staylow.git"$/;"	s	object:repository
+url	node_modules/staylow/package.json	/^    "url": "https:\/\/github.com\/jurelik\/staylow\/issues"$/;"	s	object:bugs
+url	node_modules/uuid/package.json	/^    "url": "git+https:\/\/github.com\/kelektiv\/node-uuid.git"$/;"	s	object:repository
+url	node_modules/uuid/package.json	/^    "url": "https:\/\/github.com\/kelektiv\/node-uuid\/issues"$/;"	s	object:bugs
+url	node_modules/ws/package.json	/^    "url": "git+https:\/\/github.com\/websockets\/ws.git"$/;"	s	object:repository
+url	node_modules/ws/package.json	/^    "url": "http:\/\/2x.io"$/;"	s	object:author
+url	node_modules/ws/package.json	/^    "url": "https:\/\/github.com\/websockets\/ws\/issues"$/;"	s	object:bugs
+url	package.json	/^    "url": "git+https:\/\/github.com\/jurelik\/web-socks.git"$/;"	s	object:repository
+url	package.json	/^    "url": "https:\/\/github.com\/jurelik\/web-socks\/issues"$/;"	s	object:bugs
+usage	node_modules/.bin/uuid	/^function usage() {$/;"	f
+usage	node_modules/uuid/bin/uuid	/^function usage() {$/;"	f
+utf-8-validate	node_modules/ws/package.json	/^    "utf-8-validate": "^5.0.2"$/;"	s	object:devDependencies
+uuid	node_modules/uuid/index.js	/^var uuid = v4;$/;"	v
+uuid	node_modules/uuid/package.json	/^    "uuid": ".\/bin\/uuid"$/;"	s	object:bin
+uuid	package-lock.json	/^    "uuid": {$/;"	o	object:dependencies
+uuid	package.json	/^    "uuid": "^3.3.3",$/;"	s	object:dependencies
+uuid [![Build Status](https://secure.travis-ci.org/kelektiv/node-uuid.svg?branch=master)](http://travis-ci.org/kelektiv/node-uuid)	node_modules/uuid/README.md	/^# uuid [![Build Status](https:\/\/secure.travis-ci.org\/kelektiv\/node-uuid.svg?branch=master)](/;"	c
+uuidToBytes	node_modules/uuid/lib/v35.js	/^function uuidToBytes(uuid) {$/;"	f
+uuidv4	server.js	/^let uuidv4 = require('uuid\/v4');$/;"	v
+v1	node_modules/uuid/index.js	/^var v1 = require('.\/v1');$/;"	v
+v1	node_modules/uuid/v1.js	/^function v1(options, buf, offset) {$/;"	f
+v35	node_modules/uuid/v3.js	/^var v35 = require('.\/lib\/v35.js');$/;"	v
+v35	node_modules/uuid/v5.js	/^var v35 = require('.\/lib\/v35.js');$/;"	v
+v4	node_modules/uuid/index.js	/^var v4 = require('.\/v4');$/;"	v
+v4	node_modules/uuid/v4.js	/^function v4(options, buf, offset) {$/;"	f
+verifyClient	node_modules/ws/lib/websocket-server.js	/^      verifyClient: null,$/;"	p	class:WebSocketServer.constructor.options
+version	node_modules/.bin/uuid	/^var version = args.shift() || 'v4';$/;"	v
+version	node_modules/async-limiter/package.json	/^  "version": "1.0.1"$/;"	s
+version	node_modules/staylow/package.json	/^  "version": "1.1.15"$/;"	s
+version	node_modules/uuid/bin/uuid	/^var version = args.shift() || 'v4';$/;"	v
+version	node_modules/uuid/package.json	/^  "version": "3.3.3"$/;"	s
+version	node_modules/ws/package.json	/^  "version": "7.1.2"$/;"	s
+version	package-lock.json	/^      "version": "1.0.1",$/;"	s	object:dependencies.async-limiter
+version	package-lock.json	/^      "version": "1.1.15",$/;"	s	object:dependencies.staylow
+version	package-lock.json	/^      "version": "3.3.3",$/;"	s	object:dependencies.uuid
+version	package-lock.json	/^      "version": "7.1.2",$/;"	s	object:dependencies.ws
+version	package-lock.json	/^  "version": "1.0.0",$/;"	s
+version	package.json	/^  "version": "1.0.0",$/;"	s
+viewToBuffer	node_modules/ws/lib/buffer-util.js	/^function viewToBuffer(view) {$/;"	f
+web-socks	README.md	/^# web-socks$/;"	c
+whatwgRNG	node_modules/uuid/lib/rng-browser.js	/^  module.exports = function whatwgRNG() {$/;"	f
+wordsToMd5	node_modules/uuid/lib/md5-browser.js	/^function wordsToMd5(x, len) {$/;"	f
+ws	package-lock.json	/^    "ws": {$/;"	o	object:dependencies
+ws	package.json	/^    "ws": "^7.1.2"$/;"	s	object:dependencies
+ws: a Node.js WebSocket library	node_modules/ws/README.md	/^# ws: a Node.js WebSocket library$/;"	c
+zlib	node_modules/ws/lib/permessage-deflate.js	/^const zlib = require('zlib');$/;"	C
+zlibLimiter	node_modules/ws/lib/permessage-deflate.js	/^let zlibLimiter;$/;"	v
